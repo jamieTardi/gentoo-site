@@ -3,6 +3,12 @@
 	width: 100%;
 	display: flex;
 }
+.dark {
+	.shop-home-container {
+		background: #292929;
+		color: white;
+	}
+}
 .shop-items-container {
 	width: 100vw;
 	height: 100%;

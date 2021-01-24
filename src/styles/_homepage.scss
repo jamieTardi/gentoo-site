@@ -71,6 +71,26 @@
 	width: 100%;
 	background: #f5f5f5;
 }
+.dark {
+	.top-middle {
+		background: rgba(18, 18, 18, 1);
+	}
+	.middle-text {
+		color: white;
+	}
+	a {
+		color: white;
+	}
+	.icons-middle > p {
+		color: white;
+	}
+	.learn-more {
+		background: #292929;
+	}
+	.middle-container {
+		background: #292929;
+	}
+}
 
 .icons-container-middle {
 	height: 100%;
@@ -97,6 +117,14 @@
 .middle-text {
 	margin-left: 1rem;
 	text-align: center;
+	a {
+		pointer-events: none;
+		text-decoration: none;
+		&:hover {
+			pointer-events: none;
+			text-decoration: none;
+		}
+	}
 }
 
 .icons-middle > p {
@@ -147,6 +175,19 @@
 	height: 50%;
 	width: 100%;
 	background: #f5f5f5;
+}
+
+.dark {
+	.grey-half {
+		background: #292929;
+	}
+	.bottom-text {
+		background: rgba(18, 18, 18, 1);
+		color: white;
+		p {
+			color: white;
+		}
+	}
 }
 
 .bottom-image-container {

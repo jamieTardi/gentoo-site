@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/styles.css';
 import {
 	Purifier,
@@ -6,14 +6,15 @@ import {
 	HairDryers,
 	Toasters,
 } from './components/shop-pages/index';
-import { Homepage, ShopHome } from './pages/index';
+import { Homepage, ShopHome, AboutUs } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
+	const [darkMode, setDarkMode] = useState(false);
 	return (
-		<div className='app'>
-			<Navbar />
+		<div className={darkMode ? 'app dark' : 'app'}>
+			<Navbar setDarkMode={setDarkMode} darkMode={darkMode} />
 			<Switch>
 				<Route path='/' exact>
 					<Homepage />
@@ -35,6 +36,9 @@ function App() {
 				</Route>
 				<Route exact path='/middle'>
 					<MiddleOfHome />
+				</Route>
+				<Route exact path='/about-us'>
+					<AboutUs />
 				</Route>
 			</Switch>
 			<Footer />

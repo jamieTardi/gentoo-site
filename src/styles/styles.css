@@ -12,6 +12,15 @@ nav {
           align-items: center;
 }
 
+.dark nav {
+  background: #292929;
+  color: white;
+}
+
+.dark nav a {
+  color: white;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +36,70 @@ nav {
 
 .trolley {
   margin-bottom: 1rem;
+  margin-right: 2rem;
+  width: 10vw;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .homepage-container {
@@ -118,6 +191,30 @@ nav {
   background: #f5f5f5;
 }
 
+.dark .top-middle {
+  background: #121212;
+}
+
+.dark .middle-text {
+  color: white;
+}
+
+.dark a {
+  color: white;
+}
+
+.dark .icons-middle > p {
+  color: white;
+}
+
+.dark .learn-more {
+  background: #292929;
+}
+
+.dark .middle-container {
+  background: #292929;
+}
+
 .icons-container-middle {
   height: 100%;
   width: 40%;
@@ -162,6 +259,16 @@ nav {
 .middle-text {
   margin-left: 1rem;
   text-align: center;
+}
+
+.middle-text a {
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.middle-text a:hover {
+  pointer-events: none;
+  text-decoration: none;
 }
 
 .icons-middle > p {
@@ -216,6 +323,19 @@ nav {
   height: 50%;
   width: 100%;
   background: #f5f5f5;
+}
+
+.dark .grey-half {
+  background: #292929;
+}
+
+.dark .bottom-text {
+  background: #121212;
+  color: white;
+}
+
+.dark .bottom-text p {
+  color: white;
 }
 
 .bottom-image-container {
@@ -286,6 +406,11 @@ nav {
   line-height: 1.6rem;
 }
 
+.dark .footer-container {
+  background: #292929;
+  color: white;
+}
+
 .social-icons {
   width: 10%;
   height: auto;
@@ -314,6 +439,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.dark .shop-home-container {
+  background: #292929;
+  color: white;
 }
 
 .shop-items-container {
@@ -399,6 +529,20 @@ nav {
   background: linear-gradient(180deg, whitesmoke 50%, white 50%);
 }
 
+.dark .indivdual-item {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #121212), color-stop(50%, #292929));
+  background: linear-gradient(180deg, #121212 50%, #292929 50%);
+  color: white;
+}
+
+.dark .indivdual-item p {
+  color: white;
+}
+
+.dark .indivdual-item h1 {
+  color: white;
+}
+
 .grey-area {
   height: 50%;
   width: 100%;
@@ -438,6 +582,79 @@ nav {
 .button-and-price button {
   background: black;
   padding: 1rem 2rem;
+}
+
+.about-us-container {
+  height: 75vh;
+  width: 100vw;
+  position: relative;
+}
+
+.about-us-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.dark .about-us-card {
+  background: #292929;
+}
+
+.dark .about-us-card p {
+  color: white;
+}
+
+.dark .about-us-card h2 {
+  color: white;
+}
+
+.dark .about-us-title {
+  background: #121212;
+}
+
+.about-us-card {
+  width: 30%;
+  height: 80%;
+  border: none;
+  z-index: 3;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background: white;
+  -webkit-box-shadow: 5px 5px 15px 5px #292929;
+          box-shadow: 5px 5px 15px 5px #292929;
+}
+
+.about-us-title {
+  height: 15%;
+  width: 100%;
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us-content {
+  height: 85%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 2rem;
 }
 
 * {
