@@ -1,0 +1,43 @@
+.purifier-shop-container {
+	height: fit-content;
+	width: fit-content;
+}
+
+.indivdual-item {
+	height: 75vh;
+	width: 100vw;
+	display: flex;
+	background: linear-gradient(
+		180deg,
+		rgba(245, 245, 245, 1) 50%,
+		rgba(255, 255, 255, 1) 50%
+	);
+}
+
+.grey-area {
+	height: 50%;
+	width: 100%;
+}
+
+.indivdual-items-text {
+	width: 75%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	p {
+		padding: 0rem 4rem;
+		text-align: center;
+	}
+}
+
+.button-and-price {
+	width: 75%;
+	display: flex;
+	justify-content: space-around;
+	button {
+		background: black;
+		padding: 1rem 2rem;
+	}
+}

@@ -1,0 +1,23 @@
+@mixin flex-nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav {
+	width: 100vw;
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar {
+	@include flex-nav;
+	width: 90%;
+	height: 100%;
+}
+
+.trolley {
+	margin-bottom: 1rem;
+}

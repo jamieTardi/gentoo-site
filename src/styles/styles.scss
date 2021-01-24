@@ -1,0 +1,45 @@
+//imports
+@import './navStyles';
+@import './homepage';
+@import './footer';
+@import './shophome';
+@import './shopItems';
+
+// global styles
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+	height: fit-content;
+}
+
+a {
+	color: black;
+}
+
+p {
+	color: black;
+}
+
+h1 {
+	color: black;
+}
+
+span {
+	color: black;
+}
+
+button {
+	color: white;
+}
+
+li {
+	list-style-type: none;
+	font-size: 1.3rem;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
