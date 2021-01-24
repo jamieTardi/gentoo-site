@@ -4,6 +4,7 @@ import {
 	MiddleOfHome,
 	BottomContainer,
 } from '../components/index';
+
 const Homepage = () => {
 	return (
 		<div className='homepage-container'>

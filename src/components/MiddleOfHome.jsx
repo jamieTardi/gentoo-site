@@ -6,6 +6,7 @@ import purifier from '../assets/images/purifier.png';
 import fan from '../assets/images/fan.webp';
 import hairDryer from '../assets/images/hairdryer-stock.jpg';
 import humidfier from '../assets/images/humidfiers.webp';
+import { NavHashLink } from 'react-router-hash-link';
 
 const MiddleOfHome = () => {
 	return (
@@ -26,7 +27,9 @@ const MiddleOfHome = () => {
 							<p>Energy and cost effective</p>
 						</div>
 					</div>
-					<h3>Air Purifiers for a safer future</h3>
+					<NavHashLink to='/middle#middle'>
+						<h3>Air Purifiers for a safer future</h3>
+					</NavHashLink>
 					<p className='middle-text'>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
 						commodi impedit omnis officia autem aliquam possimus nobis saepe

@@ -7,7 +7,7 @@ import {
 	Toasters,
 } from './components/shop-pages/index';
 import { Homepage, ShopHome } from './pages/index';
-import { Navbar, Footer } from './components/index';
+import { Navbar, Footer, MiddleOfHome } from './components/index';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -32,6 +32,9 @@ function App() {
 				</Route>
 				<Route exact path='/heaters'>
 					<Heaters />
+				</Route>
+				<Route exact path='/middle'>
+					<MiddleOfHome />
 				</Route>
 			</Switch>
 			<Footer />
