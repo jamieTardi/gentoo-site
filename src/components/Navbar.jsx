@@ -19,7 +19,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 				<Link to='/shophome'>
 					<li>Shop</li>
 				</Link>
-				<li>Contact us</li>
+				<Link to='/contact-us'>
+					<li>Contact us</li>
+				</Link>
 			</ul>
 			<div className='trolley'>
 				<IconButton aria-label='Show Cart Items' color='secondary'>

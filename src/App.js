@@ -6,7 +6,7 @@ import {
 	HairDryers,
 	Toasters,
 } from './components/shop-pages/index';
-import { Homepage, ShopHome, AboutUs } from './pages/index';
+import { Homepage, ShopHome, AboutUs, Contact } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import { Switch, Route } from 'react-router-dom';
 
@@ -39,6 +39,9 @@ function App() {
 				</Route>
 				<Route exact path='/about-us'>
 					<AboutUs />
+				</Route>
+				<Route exact path='/contact-us'>
+					<Contact />
 				</Route>
 			</Switch>
 			<Footer />
