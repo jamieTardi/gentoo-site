@@ -24,6 +24,10 @@ nav {
 	}
 }
 
+.darkmode-button {
+	margin-top: 5rem;
+}
+
 .navbar {
 	@include flex-nav;
 	width: 90%;
@@ -31,9 +35,12 @@ nav {
 }
 
 .trolley {
-	margin-bottom: 1rem;
-	margin-right: 2rem;
 	width: 10vw;
+	position: relative;
+	button {
+		position: absolute;
+		top: 25%;
+	}
 }
 
 //dark mode slider
@@ -126,6 +133,9 @@ input:checked + .slider:before {
 				cursor: pointer;
 			}
 		}
+	}
+	.darkmode-button {
+		margin-top: 0rem;
 	}
 	.mobile-overlay {
 		position: fixed;

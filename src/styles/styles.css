@@ -25,6 +25,10 @@ nav .bars {
   color: white;
 }
 
+.darkmode-button {
+  margin-top: 5rem;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,9 +43,13 @@ nav .bars {
 }
 
 .trolley {
-  margin-bottom: 1rem;
-  margin-right: 2rem;
   width: 10vw;
+  position: relative;
+}
+
+.trolley button {
+  position: absolute;
+  top: 25%;
 }
 
 /* The switch - the box around the slider */
@@ -142,6 +150,9 @@ input:checked + .slider:before {
   nav .trolley .bars {
     display: inline;
     cursor: pointer;
+  }
+  .darkmode-button {
+    margin-top: 0rem;
   }
   .mobile-overlay {
     position: fixed;

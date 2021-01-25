@@ -31,24 +31,26 @@ const Navbar = ({ darkMode, setDarkMode, hideMiniNav, setHideMiniNav }) => {
 						<Badge badgeContent='1' color='secondary'></Badge>
 						<ShoppingCart />
 					</IconButton>
-					<label class='switch'>
-						<input
-							type='checkbox'
+					<div className='darkmode-button'>
+						<label class='switch'>
+							<input
+								type='checkbox'
+								onClick={() => {
+									setDarkMode((prev) => !prev);
+								}}
+							/>
+							<span class='slider round'></span>
+						</label>
+						{darkMode ? '🌙' : '☀️'}
+						<img
+							src={Bars}
+							alt='Bars'
+							className='bars'
 							onClick={() => {
-								setDarkMode((prev) => !prev);
+								setHideMiniNav(false);
 							}}
 						/>
-						<span class='slider round'></span>
-					</label>
-					{darkMode ? '🌙' : '☀️'}
-					<img
-						src={Bars}
-						alt='Bars'
-						className='bars'
-						onClick={() => {
-							setHideMiniNav(false);
-						}}
-					/>
+					</div>
 				</div>
 			</nav>
 			<div className={hideMiniNav ? 'hide mobile-overlay' : 'mobile-overlay'}>
