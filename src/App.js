@@ -12,9 +12,15 @@ import { Switch, Route } from 'react-router-dom';
 
 function App() {
 	const [darkMode, setDarkMode] = useState(false);
+	const [hideMiniNav, setHideMiniNav] = useState(true);
 	return (
 		<div className={darkMode ? 'app dark' : 'app'}>
-			<Navbar setDarkMode={setDarkMode} darkMode={darkMode} />
+			<Navbar
+				setDarkMode={setDarkMode}
+				darkMode={darkMode}
+				hideMiniNav={hideMiniNav}
+				setHideMiniNav={setHideMiniNav}
+			/>
 			<Switch>
 				<Route path='/' exact>
 					<Homepage />

@@ -58,7 +58,24 @@
 #warm {
 	color: #e24317;
 }
+@media (max-width: 450px) {
+	.first-slide-text {
+		width: 70vw;
+		left: 0%;
+		top: -700%;
 
+		h1 {
+			font-size: 1.5rem;
+		}
+		button {
+			padding: 0.5rem 0.3rem;
+			font-size: 1.5rem;
+		}
+		svg {
+			display: none;
+		}
+	}
+}
 //Middle of Home
 .middle-container {
 	height: 100vh;
@@ -163,6 +180,61 @@
 	}
 }
 
+@media (max-width: 450px) {
+	.middle-container {
+		height: fit-content;
+	}
+	.purifier-container {
+		width: 100vw;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.5rem;
+		img {
+			width: 100vw;
+		}
+	}
+	.icons-middle {
+		max-width: 35%;
+	}
+	.top-middle {
+		padding: 0rem;
+	}
+	.icons-container-middle {
+		width: 100%;
+		margin: 0rem;
+		padding: 0rem 0.3rem;
+	}
+	.bottom-image-container {
+		opacity: 0;
+		pointer-events: none;
+	}
+	.learn-more {
+		padding: 0.5rem 0.5rem;
+		margin-bottom: 1rem;
+	}
+	a {
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+	.image-thumbnails {
+		width: 100vw;
+		flex-direction: column;
+		height: 50vh;
+		margin-left: 1.2rem;
+		margin-top: 5rem;
+		img {
+			object-fit: cover;
+			height: 40%;
+			max-width: 90%;
+			object-position: 70%;
+			margin-top: 1rem;
+		}
+	}
+}
+
 //bottom container
 
 .small-thumbnail-gallery {
@@ -217,5 +289,24 @@
 		width: 25%;
 		text-align: center;
 		padding-bottom: 1rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.bottom-text {
+		flex-direction: column;
+		position: relative;
+		height: 30vh;
+		h3 {
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			top: -40%;
+		}
+		p {
+			width: 100%;
+			position: absolute;
+			top: 0%;
+		}
 	}
 }

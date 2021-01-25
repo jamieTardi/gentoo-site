@@ -166,7 +166,6 @@ const Form = () => {
 							InputLabelProps={{
 								style: { color: '#000000' },
 							}}
-							type='text'
 							autoComplete='current-email'
 							variant='outlined'
 							className={classes.textField}

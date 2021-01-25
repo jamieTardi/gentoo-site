@@ -25,6 +25,7 @@
 	height: auto;
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 }
 
 .payment-icons {
@@ -32,4 +33,15 @@
 	height: auto;
 	display: flex;
 	justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+	.social-icons {
+		justify-content: space-around;
+		width: 60%;
+	}
+	.payment-icons {
+		justify-content: space-around;
+		width: 60%;
+	}
 }

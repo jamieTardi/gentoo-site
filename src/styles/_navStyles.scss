@@ -10,6 +10,9 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	.bars {
+		display: none;
+	}
 }
 .dark {
 	nav {
@@ -91,4 +94,80 @@ input:checked + .slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
+}
+@media (max-width: 900px) {
+	nav {
+		ul {
+			width: fit-content;
+			height: fit-content;
+			padding: 0rem;
+			margin: 0rem;
+			justify-content: flex-start;
+			align-items: flex-start;
+			position: relative;
+			img {
+				position: absolute;
+				left: 5%;
+			}
+		}
+		li {
+			display: none;
+		}
+
+		.trolley {
+			width: 50vw;
+			padding: 0;
+			margin: 0rem 1rem 0rem 0rem;
+			button {
+				display: none;
+			}
+			.bars {
+				display: inline;
+				cursor: pointer;
+			}
+		}
+	}
+	.mobile-overlay {
+		position: fixed;
+		top: 0%;
+		width: 100vw;
+		height: 100vh;
+		background: white;
+		z-index: 9000;
+	}
+	.mini-nav {
+		width: 90vw;
+		height: 15vh;
+		display: flex;
+		margin: 0rem 1rem;
+		border-bottom: 2px solid black;
+		.top-mini-nav {
+			width: 90vw;
+			height: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+	}
+	.mini-nav-items {
+		ul {
+			li {
+				height: 10vh;
+				text-align: center;
+				cursor: pointer;
+			}
+			&:first-child {
+				margin-top: 2rem;
+			}
+		}
+	}
+	.mini-nav-social {
+		display: flex;
+		justify-content: space-around;
+		width: 80%;
+		margin-left: 2rem;
+	}
+	#bars {
+		cursor: pointer;
+	}
 }
