@@ -1,7 +1,7 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
 
-const Purifier = ({ products }) => {
+const Fans = ({ products }) => {
 	return (
 		<>
 			{products.length === 0 ? (
@@ -10,17 +10,18 @@ const Purifier = ({ products }) => {
 				</div>
 			) : (
 				<div className='purifier-shop-container'>
-					{products.map((purifier) => (
+					{products.map((fan) => (
 						<>
-							{purifier.categories[0].id === 'cat_N7GKwbBGvw3EX4' ? (
-								<div className='indivdual-item' key={purifier.name}>
-									<img src={purifier.media.source} alt={purifier.name} />
+							{fan.categories[0].id === 'cat_ZRjywMpabl7Y8G' ? (
+								<div className='indivdual-item' key={fan.name}>
+									<img src={fan.media.source} alt={fan.name} />
 									<div className='indivdual-items-text'>
-										<h1>{purifier.name}</h1>
-										<p>{purifier.description}</p>
+										<h1>{fan.name}</h1>
+										<p
+											dangerouslySetInnerHTML={{ __html: fan.description }}></p>
 										<div className='button-and-price'>
 											<button>Add to Basket</button>
-											<h4>{purifier.price.formatted_with_symbol} incl VAT</h4>
+											<h4>{fan.price.formatted_with_symbol} incl VAT</h4>
 										</div>
 									</div>
 								</div>
@@ -35,4 +36,4 @@ const Purifier = ({ products }) => {
 	);
 };
 
-export default Purifier;
+export default Fans;

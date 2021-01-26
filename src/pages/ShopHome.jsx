@@ -16,10 +16,10 @@ const ShopHome = () => {
 		},
 		{
 			img: hairDryers,
-			title: 'Hair Dryers',
+			title: 'Cooling Fans',
 			text:
-				'Click below to go to our shop for hair dryers, in here you will be able to see a selection of our best hair dryers and all of the technical specs associated with them.',
-			link: '/hair-dryers',
+				'Click below to go to our shop for cooling fans, in here you will be able to see a selection of our best cooling fans and all of the technical specs associated with them.',
+			link: '/fans',
 		},
 		{
 			img: purifier2,
