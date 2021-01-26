@@ -23,10 +23,10 @@ const ShopHome = () => {
 		},
 		{
 			img: purifier2,
-			title: 'Toasters',
+			title: 'Humidifiers',
 			text:
-				'Click below to go to our shop for toasters, in here you will be able to see a selection of our best toasters and all of the technical specs associated with them.',
-			link: '/toasters',
+				'Click below to go to our shop for humidifiers, in here you will be able to see a selection of our best humidifiers and all of the technical specs associated with them.',
+			link: '/humidifiers',
 		},
 		{
 			img: heater,

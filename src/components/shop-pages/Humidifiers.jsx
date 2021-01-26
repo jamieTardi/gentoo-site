@@ -1,7 +1,7 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
 
-const Purifier = ({ products, handleUpdateCart }) => {
+const Humidifiers = ({ products, handleUpdateCart }) => {
 	return (
 		<>
 			{products.length === 0 ? (
@@ -10,25 +10,25 @@ const Purifier = ({ products, handleUpdateCart }) => {
 				</div>
 			) : (
 				<div className='purifier-shop-container'>
-					{products.map((purifier) => (
-						<div key={purifier.name}>
-							{purifier.categories[0].id === 'cat_N7GKwbBGvw3EX4' ? (
-								<div className='indivdual-item' key={purifier.name}>
-									<img src={purifier.media.source} alt={purifier.name} />
+					{products.map((humidifier) => (
+						<div key={humidifier.name}>
+							{humidifier.categories[0].id === 'cat_aZWNoyvq9580JA' ? (
+								<div className='indivdual-item' key={humidifier.name}>
+									<img src={humidifier.media.source} alt={humidifier.name} />
 									<div className='indivdual-items-text'>
-										<h1>{purifier.name}</h1>
+										<h1>{humidifier.name}</h1>
 										<p
 											dangerouslySetInnerHTML={{
-												__html: purifier.description,
+												__html: humidifier.description,
 											}}></p>
 										<div className='button-and-price'>
 											<button
 												onClick={() => {
-													handleUpdateCart(purifier.id, 1);
+													handleUpdateCart(humidifier.id, 1);
 												}}>
 												Add to Basket
 											</button>
-											<h4>{purifier.price.formatted_with_symbol} incl VAT</h4>
+											<h4>{humidifier.price.formatted_with_symbol} incl VAT</h4>
 										</div>
 									</div>
 								</div>
@@ -43,4 +43,4 @@ const Purifier = ({ products, handleUpdateCart }) => {
 	);
 };
 
-export default Purifier;
+export default Humidifiers;

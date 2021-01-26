@@ -743,13 +743,20 @@ input:checked + .slider:before {
 }
 
 .indivdual-item {
-  height: 75vh;
+  height: 90vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, whitesmoke), color-stop(50%, white));
   background: linear-gradient(180deg, whitesmoke 50%, white 50%);
+}
+
+.indivdual-item img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .dark .indivdual-item {
@@ -777,8 +784,9 @@ input:checked + .slider:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -786,13 +794,13 @@ input:checked + .slider:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  margin-right: 3rem;
 }
 
 .indivdual-items-text p {
   padding: 0rem 0rem;
   text-align: center;
-  margin-right: 3rem;
 }
 
 .button-and-price {
