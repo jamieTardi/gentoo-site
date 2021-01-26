@@ -45,7 +45,9 @@ function App() {
 		} catch (err) {
 			console.log(err);
 		}
+		fetchCart();
 	};
+
 	useEffect(() => {
 		fetchProducts();
 		fetchCart();
