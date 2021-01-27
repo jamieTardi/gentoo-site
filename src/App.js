@@ -147,6 +147,7 @@ function App() {
 						cart={cart}
 						setCheckoutToken={setCheckoutToken}
 						handleCaptureCheckout={handleCaptureCheckout}
+						checkoutToken={checkoutToken}
 					/>
 				</Route>
 			</Switch>
