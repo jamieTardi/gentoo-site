@@ -14,7 +14,10 @@ const Fans = ({ products, handleUpdateCart }) => {
 						<div key={fan.name}>
 							{fan.categories[0].id === 'cat_ZRjywMpabl7Y8G' ? (
 								<div className='indivdual-item' key={fan.name}>
-									<img src={fan.media.source} alt={fan.name} />
+									<img
+										src={fan.media.source ? fan.media.source : Loading}
+										alt={fan.name}
+									/>
 									<div className='indivdual-items-text'>
 										<h1>{fan.name}</h1>
 										<p

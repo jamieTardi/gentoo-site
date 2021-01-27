@@ -20,9 +20,9 @@ const Footer = () => {
 					Website design by Tardi Digital Media
 					<br /> <a href='https://www.jamietardi.co.uk'>www.jamietardi.co.uk</a>
 					<br /> All website content is copyright of Gentoo Ltd.
-					<br /> 112 Fake Street,
-					<br /> Newbury, <br />
-					RG14 123
+					<br /> 130 Old street
+					<br /> London , <br />
+					EC1V 9BD
 				</h6>
 			</div>
 			<div className='payment-icons'>

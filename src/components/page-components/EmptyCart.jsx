@@ -6,7 +6,7 @@ const EmptyCart = () => {
 	return (
 		<div className='empty-cart-container'>
 			<h2>Oh no! Looks like Your Cart is empty!</h2>
-			<img src={EmptyCartImg} alt='Empty Cart Image' />
+			<img src={EmptyCartImg} alt='Empty Cart' />
 			<h4>Click below to continue shopping!</h4>
 			<Link to='/shopHome'>
 				<button>Back to the shop</button>

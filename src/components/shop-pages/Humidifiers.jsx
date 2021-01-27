@@ -14,7 +14,14 @@ const Humidifiers = ({ products, handleUpdateCart }) => {
 						<div key={humidifier.name}>
 							{humidifier.categories[0].id === 'cat_aZWNoyvq9580JA' ? (
 								<div className='indivdual-item' key={humidifier.name}>
-									<img src={humidifier.media.source} alt={humidifier.name} />
+									<img
+										src={
+											humidifier.media.source
+												? humidifier.media.source
+												: Loading
+										}
+										alt={humidifier.name}
+									/>
 									<div className='indivdual-items-text'>
 										<h1>{humidifier.name}</h1>
 										<p

@@ -14,7 +14,12 @@ const Purifier = ({ products, handleUpdateCart }) => {
 						<div key={purifier.name}>
 							{purifier.categories[0].id === 'cat_N7GKwbBGvw3EX4' ? (
 								<div className='indivdual-item' key={purifier.name}>
-									<img src={purifier.media.source} alt={purifier.name} />
+									<img
+										src={
+											purifier.media.source ? purifier.media.source : Loading
+										}
+										alt={purifier.name}
+									/>
 									<div className='indivdual-items-text'>
 										<h1>{purifier.name}</h1>
 										<p
