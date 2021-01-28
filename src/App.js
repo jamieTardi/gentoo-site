@@ -9,6 +9,11 @@ import {
 import { Homepage, ShopHome, AboutUs, Contact } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import { Cart, Checkout } from './components/checkout-components/index';
+import {
+	WinixZero,
+	WinixZeroN,
+	WinixZeroPro,
+} from './components/sub-pages/index';
 import { Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 
@@ -154,6 +159,10 @@ function App() {
 						shippingCost={shippingCost}
 						setShippingCost={setShippingCost}
 					/>
+				</Route>
+				{/* subpages */}
+				<Route exact path='/winix-zero'>
+					<WinixZero />
 				</Route>
 			</Switch>
 			<Footer />

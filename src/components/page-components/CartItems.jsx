@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 	const productArr = cart.line_items;
+
 	return (
 		<>
 			{productArr && (
@@ -26,7 +27,7 @@ const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 								</div>
 							))}
 							<li id='cart-subtotal'>
-								Subtotal: <span>{cart.subtotal.formatted_with_symbol}</span>
+								Subtotal: <span>£{cart.subtotal.formatted}</span>
 							</li>
 						</ul>
 						<div className='checkout-btn-container'>
@@ -41,6 +42,9 @@ const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 								<button className='checkout-btn'>Checkout</button>
 							</Link>
 						</div>
+						<p className='shipping-small-text'>
+							*Shipping is priced at £4.95 per item
+						</p>
 					</div>
 					{productArr.map((product) => (
 						<div className='main-cart-items-container' key={product.name}>
@@ -56,7 +60,7 @@ const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 									</h6>
 								</div>
 								<button>Technical specs</button>
-								<button className='remove-btn'>Remove Item</button>
+
 								<div className='add-remove-items'>
 									<svg
 										onClick={() => {

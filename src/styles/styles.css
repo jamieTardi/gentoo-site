@@ -1199,6 +1199,11 @@ input:checked + .slider:before {
   background: black;
 }
 
+.shipping-small-text {
+  font-size: 0.6rem;
+  margin: 2rem 1rem;
+}
+
 .flex-list {
   width: 100%;
 }

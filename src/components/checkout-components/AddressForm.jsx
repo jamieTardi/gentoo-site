@@ -75,7 +75,7 @@ const AddressForm = ({ checkoutToken, next }) => {
 	}, [shippingCountry]);
 
 	return (
-		<div>
+		<div className='address-container'>
 			<Typography variant='h6' gutterBottom>
 				Shipping Address
 			</Typography>
