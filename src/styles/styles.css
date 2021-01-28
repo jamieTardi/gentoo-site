@@ -282,7 +282,7 @@ input:checked + .slider:before {
   color: #e24317;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
   .first-slide-text {
     width: 70vw;
     left: 0%;
@@ -434,7 +434,7 @@ input:checked + .slider:before {
   margin-top: 4rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
   .middle-container {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -569,7 +569,7 @@ input:checked + .slider:before {
   padding-bottom: 1rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
   .bottom-text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
