@@ -14,19 +14,19 @@ const PaymentForm = ({
 	onCaptureCheckout,
 	nextStep,
 	shippingData,
+	setShippingCost,
+	shippingCost,
 }) => {
 	const stripePromise = loadStripe(
-		'pk_test_51IDW3cLRAZiErI19PadbgR3AMY12Fs894LWQSpkFcTVscpBAkugqM8mfhz203XFodgA74Gt1ux9BKLi9w63NTc9000303zPPJu',
+		'pk_live_51IDW3cLRAZiErI19KJmqjlQJQf0G0dG7vgpM17afcNyozxXBzUUSCl6WpRkINYeQPwc55w2J9sDpzSIkwpFryIRE00eRo7nEtd',
 	);
-	//
 
-	//
 	const handleSubmit = async (event, elements, stripe) => {
 		event.preventDefault();
 
 		if (!stripe || !elements) return;
 
-		const cardElement = elements.getElement(cardElement);
+		const cardElement = elements.getElement(CardElement);
 
 		const { error, paymentMethod } = await stripe.createPaymentMethod({
 			type: 'card',
@@ -67,7 +67,11 @@ const PaymentForm = ({
 	};
 	return (
 		<>
-			<Review token={token} />
+			<Review
+				token={token}
+				shippingCost={shippingCost}
+				setShippingCost={setShippingCost}
+			/>
 			<Divider />
 			<Typography variant='h6' gutterBottom style={{ margin: '20px 0' }}>
 				Payment Method
@@ -88,7 +92,7 @@ const PaymentForm = ({
 									variant='contained'
 									disabled={!stripe}
 									color='primary'>
-									pay {token.live.subtotal.formatted_with_symbol}
+									pay £{+token.live.subtotal.formatted + +shippingCost}
 								</Button>
 							</div>
 						</form>

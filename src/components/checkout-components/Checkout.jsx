@@ -18,6 +18,10 @@ const Checkout = ({
 	setCheckoutToken,
 	handleCaptureCheckout,
 	checkoutToken,
+	refreshCart,
+	order,
+	shippingCost,
+	setShippingCost,
 }) => {
 	const [activeStep, setActiveStep] = useState(0);
 	const [shippingData, setShippingData] = useState({});
@@ -46,6 +50,8 @@ const Checkout = ({
 				backStep={backStep}
 				onCaptureCheckout={handleCaptureCheckout}
 				nextStep={nextStep}
+				shippingCost={shippingCost}
+				setShippingCost={setShippingCost}
 			/>
 		);
 
@@ -77,7 +83,7 @@ const Checkout = ({
 						))}
 					</Stepper>
 					{activeStep === steps.length ? (
-						<Conformation />
+						<Conformation refreshCart={refreshCart} />
 					) : (
 						checkoutToken && <Form />
 					)}

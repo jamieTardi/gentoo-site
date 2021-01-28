@@ -19,6 +19,7 @@ function App() {
 	const [cart, setCart] = useState({});
 	const [checkoutToken, setCheckoutToken] = useState({});
 	const [order, setOrder] = useState({});
+	const [shippingCost, setShippingCost] = useState('');
 
 	//Get the initial shop products save them to state
 	const fetchProducts = async () => {
@@ -148,6 +149,10 @@ function App() {
 						setCheckoutToken={setCheckoutToken}
 						handleCaptureCheckout={handleCaptureCheckout}
 						checkoutToken={checkoutToken}
+						refreshCart={refreshCart}
+						order={order}
+						shippingCost={shippingCost}
+						setShippingCost={setShippingCost}
 					/>
 				</Route>
 			</Switch>

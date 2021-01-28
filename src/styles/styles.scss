@@ -6,7 +6,10 @@
 @import './shopItems';
 @import './aboutUs';
 @import './contact';
-@import './cart'; // global styles
+@import './cart';
+@import './payment';
+
+// global styles
 * {
 	border: 0;
 	margin: 0;
