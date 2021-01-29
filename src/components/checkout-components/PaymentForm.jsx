@@ -17,9 +17,7 @@ const PaymentForm = ({
 	setShippingCost,
 	shippingCost,
 }) => {
-	const stripePromise = loadStripe(
-		'pk_live_51IDW3cLRAZiErI19KJmqjlQJQf0G0dG7vgpM17afcNyozxXBzUUSCl6WpRkINYeQPwc55w2J9sDpzSIkwpFryIRE00eRo7nEtd',
-	);
+	const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
 
 	const handleSubmit = async (event, elements, stripe) => {
 		event.preventDefault();
