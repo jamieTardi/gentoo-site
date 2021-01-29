@@ -1,7 +1,7 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
 
-const Purifier = ({ products, handleUpdateCart }) => {
+const Purifier = ({ products, handleUpdateCart, vatPrice }) => {
 	return (
 		<>
 			{products.length === 0 ? (
@@ -14,6 +14,7 @@ const Purifier = ({ products, handleUpdateCart }) => {
 						<div key={purifier.name}>
 							{purifier.categories[0].id === 'cat_N7GKwbBGvw3EX4' ? (
 								<div className='indivdual-item' key={purifier.name}>
+									{console.log(purifier)}
 									<img
 										src={
 											purifier.media.source ? purifier.media.source : Loading
@@ -33,7 +34,7 @@ const Purifier = ({ products, handleUpdateCart }) => {
 												}}>
 												Add to Basket
 											</button>
-											<h4>{purifier.price.formatted_with_symbol} incl VAT</h4>
+											<h4>£{vatPrice(purifier.price.raw)} incl VAT</h4>
 										</div>
 									</div>
 								</div>

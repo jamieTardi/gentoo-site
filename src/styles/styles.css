@@ -1213,7 +1213,11 @@ input:checked + .slider:before {
 }
 
 #cart-subtotal {
-  margin-top: 4rem;
+  margin-top: 1rem;
+}
+
+#no-vat-price {
+  margin-top: 3rem;
 }
 
 .checkout-btn-container {
@@ -1254,6 +1258,16 @@ input:checked + .slider:before {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.total-and-subtotal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 * {

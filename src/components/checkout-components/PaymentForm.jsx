@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import {
 	Elements,
@@ -16,7 +16,10 @@ const PaymentForm = ({
 	shippingData,
 	setShippingCost,
 	shippingCost,
+	vatPrice,
+	cart,
 }) => {
+	const [totalCost, setTotalCost] = useState(vatPrice(token.live.subtotal.raw));
 	const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
 
 	const handleSubmit = async (event, elements, stripe) => {
@@ -69,6 +72,10 @@ const PaymentForm = ({
 				token={token}
 				shippingCost={shippingCost}
 				setShippingCost={setShippingCost}
+				vatPrice={vatPrice}
+				totalCost={totalCost}
+				setTotalCost={setTotalCost}
+				cart={cart}
 			/>
 			<Divider />
 			<Typography variant='h6' gutterBottom style={{ margin: '20px 0' }}>
@@ -90,7 +97,7 @@ const PaymentForm = ({
 									variant='contained'
 									disabled={!stripe}
 									color='primary'>
-									pay £{+token.live.subtotal.formatted + +shippingCost}
+									pay £{totalCost}
 								</Button>
 							</div>
 						</form>

@@ -88,6 +88,14 @@ function App() {
 		}
 	};
 
+	//vat calculation
+
+	const vatPrice = (nonVatPrice) => {
+		let vatCalc = nonVatPrice * 0.2;
+		let vatAdded = vatCalc + nonVatPrice;
+		return vatAdded.toFixed(2);
+	};
+
 	useEffect(() => {
 		fetchProducts();
 		fetchCart();
@@ -113,6 +121,7 @@ function App() {
 						products={products}
 						cart={cart}
 						handleUpdateCart={handleUpdateCart}
+						vatPrice={vatPrice}
 					/>
 				</Route>
 				<Route exact path='/humidifiers'>
@@ -120,6 +129,7 @@ function App() {
 						products={products}
 						cart={cart}
 						handleUpdateCart={handleUpdateCart}
+						vatPrice={vatPrice}
 					/>
 				</Route>
 				<Route exact path='/fans'>
@@ -127,6 +137,7 @@ function App() {
 						products={products}
 						cart={cart}
 						handleUpdateCart={handleUpdateCart}
+						vatPrice={vatPrice}
 					/>
 				</Route>
 				<Route exact path='/heaters'>
@@ -146,6 +157,7 @@ function App() {
 						cart={cart}
 						handleEmptyCart={handleEmptyCart}
 						handleUpdateCartQty={handleUpdateCartQty}
+						vatPrice={vatPrice}
 					/>
 				</Route>
 				<Route exact path='/checkout'>
@@ -158,6 +170,7 @@ function App() {
 						order={order}
 						shippingCost={shippingCost}
 						setShippingCost={setShippingCost}
+						vatPrice={vatPrice}
 					/>
 				</Route>
 				{/* subpages */}

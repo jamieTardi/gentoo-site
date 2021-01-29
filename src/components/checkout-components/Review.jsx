@@ -1,18 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Typography, List, ListItem, ListItemText } from '@material-ui/core';
 
-const Review = ({ token, shippingCost, setShippingCost }) => {
+const Review = ({
+	token,
+	shippingCost,
+	setShippingCost,
+	vatPrice,
+	totalCost,
+	setTotalCost,
+	cart,
+}) => {
 	const handleShippingCost = async () => {
 		const shippingMethodsPrice = await token.shipping_methods;
 		let totalShippingCost = 0;
 		shippingMethodsPrice.forEach((item) => {
-			totalShippingCost += +item.price.formatted;
+			totalShippingCost += item.price.raw;
 		});
 		setShippingCost(totalShippingCost);
+		setTotalCost(+shippingCost + +totalCost);
 	};
 	useEffect(() => {
 		handleShippingCost();
 	}, []);
+
 	return (
 		<>
 			<Typography variant='h6' gutterBottom>
@@ -40,10 +50,16 @@ const Review = ({ token, shippingCost, setShippingCost }) => {
 							</Typography>
 						</div>
 						<div className='small-flex-list'>
-							<ListItemText primary='Total' />
-							<Typography variant='subtitle1' style={{ fontWeight: 700 }}>
-								£{+token.live.subtotal.formatted + +shippingCost}
-							</Typography>
+							<div className='total-and-subtotal'>
+								<ListItemText primary='Total without VAT' />
+								<Typography variant='subtitle1' style={{ fontWeight: 700 }}>
+									£{cart.subtotal.raw}
+								</Typography>
+								<ListItemText primary='Total' />
+								<Typography variant='subtitle1' style={{ fontWeight: 700 }}>
+									£{totalCost}
+								</Typography>
+							</div>
 						</div>
 					</div>
 				</ListItem>
