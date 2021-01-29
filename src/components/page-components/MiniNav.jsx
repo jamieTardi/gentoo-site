@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MiniNav = ({ setHideMiniNav }) => {
 	return (
@@ -71,11 +72,41 @@ const MiniNav = ({ setHideMiniNav }) => {
 			</div>
 			<div className='mini-nav-items'>
 				<ul>
-					<li>Home</li>
-					<li>About Us</li>
-					<li>Shop</li>
-					<li>Checkout</li>
-					<li>Contact Us</li>
+					<Link
+						to='/'
+						onClick={() => {
+							setHideMiniNav(true);
+						}}>
+						<li>Home</li>
+					</Link>
+					<Link
+						to='/about-us'
+						onClick={() => {
+							setHideMiniNav(true);
+						}}>
+						<li>About Us</li>
+					</Link>
+					<Link
+						to='shophome'
+						onClick={() => {
+							setHideMiniNav(true);
+						}}>
+						<li>Shop</li>
+					</Link>
+					<Link
+						to='cart'
+						onClick={() => {
+							setHideMiniNav(true);
+						}}>
+						<li>Checkout</li>
+					</Link>
+					<Link
+						to='contact-us'
+						onClick={() => {
+							setHideMiniNav(true);
+						}}>
+						<li>Contact Us</li>
+					</Link>
 				</ul>
 				<div className='mini-nav-social'>
 					<svg
