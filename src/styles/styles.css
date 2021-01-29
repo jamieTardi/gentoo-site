@@ -733,6 +733,24 @@ input:checked + .slider:before {
   font-size: 1.4rem;
 }
 
+@media (max-width: 550px) {
+  .shop-home-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shop-item-odd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .purifier-shop-container {
   height: -webkit-fit-content;
   height: -moz-fit-content;

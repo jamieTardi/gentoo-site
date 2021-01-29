@@ -10,6 +10,7 @@ const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 				<div className='cart-items-container'>
 					<div className='cart-banner'>
 						<h1>Your Cart</h1>
+						{console.log(cart)}
 					</div>
 					<div className='cart-items'></div>
 					<div className='summary'>
