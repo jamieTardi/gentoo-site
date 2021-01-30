@@ -77,7 +77,7 @@ const Checkout = ({
 						))}
 					</Stepper>
 					{activeStep === steps.length ? (
-						<Conformation refreshCart={refreshCart} />
+						<Conformation refreshCart={refreshCart} order={order} />
 					) : (
 						checkoutToken && <Form />
 					)}

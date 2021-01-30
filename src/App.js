@@ -8,7 +8,11 @@ import {
 } from './components/shop-pages/index';
 import { Homepage, ShopHome, AboutUs, Contact } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
-import { Cart, Checkout } from './components/checkout-components/index';
+import {
+	Cart,
+	Checkout,
+	Conformation,
+} from './components/checkout-components/index';
 import {
 	WinixZero,
 	WinixZeroN,
@@ -172,6 +176,9 @@ function App() {
 						setShippingCost={setShippingCost}
 						vatPrice={vatPrice}
 					/>
+				</Route>
+				<Route exact path='/conformation'>
+					<Conformation />
 				</Route>
 				{/* subpages */}
 				<Route exact path='/winix-zero'>

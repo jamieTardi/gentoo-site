@@ -52,6 +52,8 @@ const CartItems = ({
 						</div>
 						<p className='shipping-small-text'>
 							*Shipping is priced at £4.95 per item
+							<br />
+							For bulk purchases please contact us direct for the best price
 						</p>
 					</div>
 					{productArr.map((product) => (
