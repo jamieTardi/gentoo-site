@@ -11,12 +11,11 @@ const Review = ({
 	cart,
 }) => {
 	const handleShippingCost = async () => {
-		const shippingMethodsPrice = await token.shipping_methods;
-		let totalShippingCost = 0;
-		shippingMethodsPrice.forEach((item) => {
-			totalShippingCost += item.price.raw;
-		});
-		setShippingCost(totalShippingCost);
+		const shippingMethodsPrice = await token.shipping_methods[0].price.raw;
+		let totalShippingCost = shippingMethodsPrice;
+		let numberOfItems = cart.total_items;
+
+		setShippingCost(totalShippingCost * numberOfItems);
 		setTotalCost(+shippingCost + +totalCost);
 	};
 	useEffect(() => {
