@@ -852,6 +852,40 @@ input:checked + .slider:before {
   left: 45%;
 }
 
+@media (max-width: 900px) {
+  .indivdual-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .indivdual-items-text {
+    font-size: 0.8rem;
+    padding-left: 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .button-and-price {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .about-us-container {
   height: 75vh;
   width: 100vw;
@@ -945,6 +979,12 @@ input:checked + .slider:before {
     right: 0%;
     opacity: 0.8;
     margin: 0rem 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-us-card {
+    font-size: 0.8rem;
   }
 }
 
@@ -1248,6 +1288,47 @@ input:checked + .slider:before {
 .shipping-small-text {
   font-size: 0.6rem;
   margin: 2rem 1rem;
+}
+
+@media (max-width: 900px) {
+  .cart-items-container {
+    min-height: 100vh;
+  }
+  .cart-items-container h1 {
+    font-size: 1.3rem;
+  }
+  .cart-items-container img {
+    width: 20%;
+  }
+  .cart-items-container .main-cart-items-container {
+    width: 50%;
+  }
+  .cart-items-container .cart-banner {
+    width: 50%;
+  }
+  .cart-items-container .summary {
+    width: 45%;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    margin-bottom: 1rem;
+  }
+  .cart-items-container .summary h1 {
+    padding-top: 0.5rem;
+  }
+  .cart-items-container .checkout-btn-container {
+    height: 10%;
+  }
+  .cart-items-container button {
+    padding: 0.4rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  .cart-items-container .product-text-container {
+    padding: 1rem 0rem;
+  }
+  .cart-items-container .product-text-container button {
+    padding: 0.5rem 0.5rem;
+  }
 }
 
 .flex-list {

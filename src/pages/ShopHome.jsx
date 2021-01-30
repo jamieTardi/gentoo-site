@@ -30,10 +30,10 @@ const ShopHome = () => {
 		},
 		{
 			img: heater,
-			title: 'Heaters',
+			title: 'Heaters Coming soon',
 			text:
 				'Click below to go to our shop for heaters, in here you will be able to see a selection of our best heaters and all of the technical specs associated with them.',
-			link: '/heaters',
+			link: '/',
 		},
 	];
 	return (

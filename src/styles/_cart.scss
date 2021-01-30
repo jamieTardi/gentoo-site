@@ -170,3 +170,42 @@
 	font-size: 0.6rem;
 	margin: 2rem 1rem;
 }
+
+@media (max-width: 900px) {
+	.cart-items-container {
+		min-height: 100vh;
+		h1 {
+			font-size: 1.3rem;
+		}
+		img {
+			width: 20%;
+		}
+		.main-cart-items-container {
+			width: 50%;
+		}
+		.cart-banner {
+			width: 50%;
+		}
+		.summary {
+			width: 45%;
+			max-height: fit-content;
+			margin-bottom: 1rem;
+			h1 {
+				padding-top: 0.5rem;
+			}
+		}
+		.checkout-btn-container {
+			height: 10%;
+		}
+		button {
+			padding: 0.4rem 0.4rem;
+			font-size: 0.8rem;
+		}
+		.product-text-container {
+			padding: 1rem 0rem;
+			button {
+				padding: 0.5rem 0.5rem;
+			}
+		}
+	}
+}

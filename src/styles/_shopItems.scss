@@ -77,3 +77,23 @@
 		left: 45%;
 	}
 }
+
+@media (max-width: 900px) {
+	.indivdual-item {
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+	}
+	.indivdual-items-text {
+		font-size: 0.8rem;
+		padding-left: 2rem;
+		height: fit-content;
+		margin-bottom: 2rem;
+	}
+	.button-and-price {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
