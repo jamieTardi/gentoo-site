@@ -43,7 +43,7 @@ const Review = ({
 
 				<ListItem style={{ padding: '10px 0' }}>
 					<div className='flex-list'>
-						<div className='small-flex-list'>
+						<div className='shipping-list'>
 							<ListItemText primary='Shipping Cost' />
 							<Typography variant='subtitle1' style={{ fontWeight: 700 }}>
 								£{shippingCost}
@@ -55,7 +55,9 @@ const Review = ({
 								<Typography variant='subtitle1' style={{ fontWeight: 700 }}>
 									£{cart.subtotal.raw}
 								</Typography>
-								<ListItemText primary='Total' />
+							</div>
+							<div className='total-and-subtotal'>
+								<ListItemText primary='Total incl VAT' />
 								<Typography variant='subtitle1' style={{ fontWeight: 700 }}>
 									£{totalCost}
 								</Typography>

@@ -749,6 +749,10 @@ input:checked + .slider:before {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .shop-item-odd-text,
+  .shop-item-text {
+    height: 300px;
+  }
 }
 
 .purifier-shop-container {
@@ -1256,6 +1260,10 @@ input:checked + .slider:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -1268,6 +1276,13 @@ input:checked + .slider:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.shipping-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 * {
