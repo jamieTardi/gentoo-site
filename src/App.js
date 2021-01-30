@@ -6,7 +6,7 @@ import {
 	Fans,
 	Humidifiers,
 } from './components/shop-pages/index';
-import { Homepage, ShopHome, AboutUs, Contact } from './pages/index';
+import { Homepage, ShopHome, AboutUs, Contact, ShopHome2 } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import {
 	Cart,
@@ -183,6 +183,9 @@ function App() {
 				{/* subpages */}
 				<Route exact path='/winix-zero'>
 					<WinixZero />
+				</Route>
+				<Route exact to='/shopHome2'>
+					<ShopHome2 />
 				</Route>
 			</Switch>
 			<Footer />

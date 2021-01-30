@@ -755,6 +755,84 @@ input:checked + .slider:before {
   }
 }
 
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ptext {
+  width: 30%;
+  margin-left: 5rem;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: black;
+}
+
+.ptext span {
+  font-size: 3rem;
+  border: none !important;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+}
+
+.ptext button {
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+}
+
+.pimg1 {
+  background-image: url("../assets/images/bedroom.jpg");
+  -webkit-filter: brightness(93%);
+          filter: brightness(93%);
+  min-height: 120vh;
+  z-index: 0;
+}
+
+.pimg2 {
+  background-image: url("../assets/images/heater-room.jpg");
+  min-height: 700px;
+}
+
+.pimg3 {
+  background-image: url("../assets/images/bedroom.jpg");
+  min-height: 700px;
+}
+
+.pimg4 {
+  background-image: url("../assets/images/winix-hero.jpg");
+  min-height: 100vh;
+}
+
 .purifier-shop-container {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1419,9 +1497,8 @@ input:checked + .slider:before {
 
 body {
   overflow-x: hidden;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
+  margin: 0;
 }
 
 a {
