@@ -58,7 +58,7 @@
 #warm {
 	color: #e24317;
 }
-@media (max-width: 450px) {
+@media (max-width: 900px) {
 	.first-slide-text {
 		width: 70vw;
 		left: 0%;
@@ -180,7 +180,7 @@
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
 	.middle-container {
 		height: fit-content;
 	}
@@ -292,7 +292,7 @@
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
 	.bottom-text {
 		flex-direction: column;
 		position: relative;

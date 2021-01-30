@@ -7,7 +7,13 @@ import { Link } from 'react-router-dom';
 import { MiniNav } from '../components/page-components';
 import Bars from '../assets/icons/bars.svg';
 
-const Navbar = ({ darkMode, setDarkMode, hideMiniNav, setHideMiniNav }) => {
+const Navbar = ({
+	darkMode,
+	setDarkMode,
+	hideMiniNav,
+	setHideMiniNav,
+	cart,
+}) => {
 	return (
 		<>
 			<nav>
@@ -27,19 +33,23 @@ const Navbar = ({ darkMode, setDarkMode, hideMiniNav, setHideMiniNav }) => {
 					</Link>
 				</ul>
 				<div className='trolley'>
-					<IconButton aria-label='Show Cart Items' color='secondary'>
-						<Badge badgeContent='1' color='secondary'></Badge>
-						<ShoppingCart />
-					</IconButton>
+					<Link to='/cart'>
+						<IconButton aria-label='Show Cart Items' color='secondary'>
+							<Badge
+								badgeContent={cart ? cart.total_items : ''}
+								color='secondary'></Badge>
+							<ShoppingCart />
+						</IconButton>
+					</Link>
 					<div className='darkmode-button'>
-						<label class='switch'>
+						<label className='switch'>
 							<input
 								type='checkbox'
 								onClick={() => {
 									setDarkMode((prev) => !prev);
 								}}
 							/>
-							<span class='slider round'></span>
+							<span className='slider round'></span>
 						</label>
 						{darkMode ? '🌙' : '☀️'}
 						<img

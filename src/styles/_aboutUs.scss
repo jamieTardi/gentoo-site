@@ -55,3 +55,21 @@
 	@include flex-mid;
 	padding: 0rem 2rem;
 }
+
+@media (max-width: 550px) {
+	.about-us-container {
+		img {
+			object-position: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.about-us-card {
+			width: 90%;
+			height: 85%;
+			right: 0%;
+			opacity: 0.8;
+			margin: 0rem 1.5rem;
+		}
+	}
+}
