@@ -1,7 +1,7 @@
 import React from 'react';
 import { EmptyCart, CartItems } from '../page-components/';
 
-const Cart = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
+const Cart = ({ cart, handleEmptyCart, handleUpdateCartQty, vatPrice }) => {
 	return (
 		<>
 			{cart.total_items === 0 ? (
@@ -11,6 +11,7 @@ const Cart = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 					cart={cart}
 					handleEmptyCart={handleEmptyCart}
 					handleUpdateCartQty={handleUpdateCartQty}
+					vatPrice={vatPrice}
 				/>
 			)}
 		</>

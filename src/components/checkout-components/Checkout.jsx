@@ -1,16 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { commerce } from '../../lib/commerce';
 import { AddressForm, PaymentForm, Conformation } from './index';
-import {
-	Paper,
-	Stepper,
-	Step,
-	StepLabel,
-	Typography,
-	CircularProgress,
-	Divider,
-	Button,
-} from '@material-ui/core';
+import { Paper, Stepper, Step, StepLabel, Typography } from '@material-ui/core';
 import useStyles from './styles';
 
 const Checkout = ({
@@ -22,6 +13,7 @@ const Checkout = ({
 	order,
 	shippingCost,
 	setShippingCost,
+	vatPrice,
 }) => {
 	const [activeStep, setActiveStep] = useState(0);
 	const [shippingData, setShippingData] = useState({});
@@ -52,6 +44,8 @@ const Checkout = ({
 				nextStep={nextStep}
 				shippingCost={shippingCost}
 				setShippingCost={setShippingCost}
+				vatPrice={vatPrice}
+				cart={cart}
 			/>
 		);
 

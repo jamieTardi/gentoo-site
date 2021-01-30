@@ -1,7 +1,7 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
 
-const Humidifiers = ({ products, handleUpdateCart }) => {
+const Humidifiers = ({ products, handleUpdateCart, vatPrice }) => {
 	return (
 		<>
 			{products.length === 0 ? (
@@ -35,7 +35,7 @@ const Humidifiers = ({ products, handleUpdateCart }) => {
 												}}>
 												Add to Basket
 											</button>
-											<h4>{humidifier.price.formatted_with_symbol} incl VAT</h4>
+											<h4>£{vatPrice(humidifier.price.raw)} incl VAT</h4>
 										</div>
 									</div>
 								</div>

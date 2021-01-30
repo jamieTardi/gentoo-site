@@ -53,4 +53,14 @@
 }
 
 @media (max-width: 550px) {
+	.shop-home-container {
+		height: fit-content;
+		flex-direction: column;
+	}
+	.shop-item-odd {
+		flex-direction: column-reverse;
+	}
+	.shop-item-odd-text,
+	.shop-item-text {
+	}
 }

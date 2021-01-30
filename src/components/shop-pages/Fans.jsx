@@ -1,7 +1,7 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
 
-const Fans = ({ products, handleUpdateCart }) => {
+const Fans = ({ products, handleUpdateCart, vatPrice }) => {
 	return (
 		<>
 			{products.length === 0 ? (
@@ -26,7 +26,7 @@ const Fans = ({ products, handleUpdateCart }) => {
 											<button onClick={() => handleUpdateCart(fan.id, 1)}>
 												Add to Basket
 											</button>
-											<h4>{fan.price.formatted_with_symbol} incl VAT</h4>
+											<h4>£{vatPrice(fan.price.raw)} incl VAT</h4>
 										</div>
 									</div>
 								</div>

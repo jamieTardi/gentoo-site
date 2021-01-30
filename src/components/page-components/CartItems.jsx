@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
+const CartItems = ({
+	cart,
+	handleEmptyCart,
+	handleUpdateCartQty,
+	vatPrice,
+}) => {
 	const productArr = cart.line_items;
 
 	return (
@@ -22,12 +27,15 @@ const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 									</li>
 									<li className='cart-list-item'>
 										Item Cost:
-										<span>{product.price.formatted_with_symbol}</span>
+										<span>£{vatPrice(product.price.raw)}</span>
 									</li>
 								</div>
 							))}
+							<li id='no-vat-price'>
+								Price without VAT: <span>£{cart.subtotal.raw}</span>
+							</li>
 							<li id='cart-subtotal'>
-								Subtotal: <span>£{cart.subtotal.formatted}</span>
+								Subtotal incl VAT: <span>£{vatPrice(cart.subtotal.raw)}</span>
 							</li>
 						</ul>
 						<div className='checkout-btn-container'>
@@ -55,8 +63,8 @@ const CartItems = ({ cart, handleEmptyCart, handleUpdateCartQty }) => {
 										Product Name: <span>{product.name}</span>
 									</h6>
 									<h6>
-										Product Price:{' '}
-										<span>{product.price.formatted_with_symbol}</span>
+										Product Price:
+										<span>£{vatPrice(product.price.raw)}</span>
 									</h6>
 								</div>
 								<button>Technical specs</button>
