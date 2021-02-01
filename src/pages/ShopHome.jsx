@@ -1,35 +1,27 @@
 import React from 'react';
-import purifier1 from '../assets/images/purifier-room.jpg';
-import hairDryers from '../assets/images/hairdryer-stock.jpg';
-import purifier2 from '../assets/images/purifier-room2.jpg';
-import heater from '../assets/images/heater-room.jpg';
 import { Link } from 'react-router-dom';
 
 const ShopHome = () => {
 	const shopInfo = [
 		{
-			img: purifier1,
 			title: 'Purifiers',
 			text:
 				'Click below to go to our shop for purifiers, in here you will be able to see a selection of our best purifiers and all of the technical specs associated with them.',
 			link: '/purifiers',
 		},
 		{
-			img: hairDryers,
 			title: 'Cooling Fans',
 			text:
 				'Click below to go to our shop for cooling fans, in here you will be able to see a selection of our best cooling fans and all of the technical specs associated with them.',
 			link: '/fans',
 		},
 		{
-			img: purifier2,
 			title: 'Humidifiers',
 			text:
 				'Click below to go to our shop for humidifiers, in here you will be able to see a selection of our best humidifiers and all of the technical specs associated with them.',
 			link: '/humidifiers',
 		},
 		{
-			img: heater,
 			title: 'Heaters Coming soon',
 			text:
 				'Click below to go to our shop for heaters, in here you will be able to see a selection of our best heaters and all of the technical specs associated with them.',
@@ -37,35 +29,80 @@ const ShopHome = () => {
 		},
 	];
 	return (
-		<div className='shop-home-container'>
-			{shopInfo.map((shopItem, index) => (
-				<div className='shop-items-container' key={shopItem.text}>
-					{index === 1 || index === 3 ? (
-						<div className='shop-item' key={shopItem.text}>
-							<img src={shopItem.img} alt={shopItem.title} />
-							<div className='shop-item-text'>
-								<h2>{shopItem.title}</h2>
-								<h6>{shopItem.text}</h6>
-								<Link to={shopItem.link}>
-									<button>Shop Now</button>
-								</Link>
-							</div>
-						</div>
-					) : (
-						<div className='shop-item-odd' key={shopItem.text}>
-							<div className='shop-item-odd-text'>
-								<h2>{shopItem.title}</h2>
-								<h6>{shopItem.text}</h6>
-								<Link to={shopItem.link}>
-									<button>Shop Now</button>
-								</Link>
-							</div>
-							<img src={shopItem.img} alt={shopItem.text} />
-						</div>
-					)}
+		<>
+			<div className='main-and-text1'>
+				<div className='pimg1'></div>
+				<div className='ptext'>
+					<span className='border'>Purifiers</span>
+					<h5>
+						Click below to go to our shop for purifiers, in here you will be
+						able to see a selection of our best purifiers and all of the
+						technical specs associated with them.
+					</h5>
+					<Link to='/purifiers'>
+						<button className='shop-btn'>Shop Now</button>
+					</Link>
+					<button className='shop-btn tech'>Technical Specs</button>
 				</div>
-			))}
-		</div>
+			</div>
+			<section className='section'>
+				<h2> WINIX Air Purifiers</h2>
+			</section>
+
+			<div className='main-and-text2'>
+				<div className='pimg2'></div>
+				<div className='ptext2'>
+					<span className='border'>Cooling</span>
+					<h5>
+						Click below to go to our shop for cooling fans, in here you will be
+						able to see a selection of our best air circulation systems and all
+						of the technical specs associated with them.
+					</h5>
+					<Link to='/fans'>
+						<button className='shop-btn'>Shop Now</button>
+					</Link>
+					<button className='shop-btn tech'>Technical Specs</button>
+				</div>
+			</div>
+			<section className='section'>
+				<h2>Air Shower Fans</h2>
+			</section>
+
+			<div className='main-and-text2'>
+				<div className='pimg3'></div>
+				<div className='ptext3'>
+					<span className='border'>Humidifiers</span>
+					<h5>
+						Click below to go to our shop for humidifiers, in here you will be
+						able to see a selection of our best humidifiers and all of the
+						technical specs associated with them.
+					</h5>
+					<Link to='/humidifiers'>
+						<button className='shop-btn'>Shop Now</button>
+					</Link>
+					<button className='shop-btn tech'>Technical Specs</button>
+				</div>
+			</div>
+
+			<section className='section'>
+				<h2>Humidifiers</h2>
+			</section>
+
+			<div className='main-and-text2'>
+				<div className='pimg4'></div>
+				<div className='ptext4'>
+					<span className='border'>Heaters</span>
+					<h5>
+						Our selection of heaters will be coming soon! Check back here
+						shortly for further details.
+					</h5>
+					<Link to='/'>
+						<button className='shop-btn'>Shop Now</button>
+					</Link>
+					<button className='shop-btn tech'>Technical Specs</button>
+				</div>
+			</div>
+		</>
 	);
 };
 
