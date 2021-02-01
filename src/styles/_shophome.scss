@@ -68,46 +68,63 @@
 
 //parallax
 
-.pimg1,
-.pimg2,
-.pimg3,
-.pimg4 {
+.main-and-text1 {
 	position: relative;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	display: flex;
-	width: 100%;
-	justify-content: flex-start;
-	align-items: center;
-	z-index: 0;
-}
-.ptext,
-.ptext2,
-.ptext3,
-.ptext4 {
-	width: 30%;
-	margin-left: 5rem;
-	height: 250px;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: flex-start;
-	color: white;
-	position: absolute;
-	z-index: 20;
-	span {
-		font-size: 3rem;
-		border: none !important;
-		background: transparent;
+	width: 100vw;
+	height: fit-content;
+	.ptext {
+		position: absolute;
+		width: 30%;
+		margin-left: 5rem;
+		height: 250px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
 		color: white;
-		font-weight: 700;
+		top: 20%;
+		span {
+			font-size: 3rem;
+			border: none !important;
+			background: transparent;
+			color: white;
+			font-weight: 700;
+		}
+		button {
+			padding: 1rem 2rem;
+			background: black;
+			color: white;
+		}
 	}
-	button {
-		padding: 1rem 2rem;
-		background: black;
+}
+
+.main-and-text2 {
+	position: relative;
+	.ptext2,
+	.ptext3,
+	.ptext4 {
+		width: 30%;
+		margin-left: 5rem;
+		height: 250px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
 		color: white;
+		position: absolute;
+		top: 20%;
+		span {
+			font-size: 3rem;
+			border: none !important;
+			background: transparent;
+			color: white;
+			font-weight: 700;
+		}
+		button {
+			padding: 1rem 2rem;
+			background: black;
+			color: white;
+		}
 	}
 }
 
@@ -141,14 +158,6 @@
 	}
 }
 
-.ptext {
-	top: 50%;
-}
-
-.ptext2 {
-	top: 180%;
-}
-
 .ptext3 {
 	top: 280%;
 }
@@ -160,21 +169,25 @@
 .pimg1 {
 	background-image: url('../assets/images/bedroom.jpg');
 	filter: brightness(55%);
-	min-height: 120vh;
+	background-attachment: fixed;
+	min-height: 100vh;
 	z-index: 0;
 }
 .pimg2 {
 	background-image: url('../assets/images/fan-hero.png');
-	min-height: 700px;
+	background-attachment: fixed;
+	min-height: 100vh;
 	filter: brightness(55%);
 }
 .pimg3 {
 	background-image: url('../assets/images/humidfiers.webp');
-	min-height: 700px;
+	background-attachment: fixed;
+	min-height: 100vh;
 	filter: brightness(55%);
 }
 .pimg4 {
 	background-image: url('../assets/images/heater-room.jpg');
+	background-attachment: fixed;
 	min-height: 100vh;
 	filter: brightness(55%);
 }
@@ -184,25 +197,11 @@
 	.ptext2,
 	.ptext3,
 	.ptext4 {
-		width: 70%;
+		min-width: 70%;
+		margin-left: 0rem;
 	}
 	.padding {
 		padding: 1rem 0rem;
-	}
-	.ptext {
-		top: 50%;
-	}
-
-	.ptext2 {
-		top: 250%;
-	}
-
-	.ptext3 {
-		top: 380%;
-	}
-
-	.ptext4 {
-		top: 550%;
 	}
 	.pimg1 {
 		background-position: 70%;
