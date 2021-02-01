@@ -184,9 +184,6 @@ function App() {
 				<Route exact path='/winix-zero'>
 					<WinixZero />
 				</Route>
-				<Route exact to='/shopHome2'>
-					<ShopHome2 />
-				</Route>
 			</Switch>
 			<Footer />
 		</div>
