@@ -656,105 +656,6 @@ input:checked + .slider:before {
   }
 }
 
-.shop-home-container {
-  height: 80vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.dark .shop-home-container {
-  background: #292929;
-  color: white;
-}
-
-.shop-items-container {
-  width: 100vw;
-  height: 100%;
-}
-
-.shop-item {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.shop-item-odd {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.shop-item,
-.shop-item-odd {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.shop-item img,
-.shop-item-odd img {
-  width: 100%;
-  height: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.shop-item-odd-text,
-.shop-item-text {
-  height: 50%;
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 0rem 1.5rem;
-}
-
-.shop-item-odd-text button,
-.shop-item-text button {
-  padding: 1rem 2rem;
-  background: black;
-  font-size: 1.4rem;
-}
-
-@media (max-width: 550px) {
-  .shop-home-container {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .shop-item-odd {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .shop-item-odd-text,
-  .shop-item-text {
-    height: 300px;
-  }
-}
-
 .main-and-text1 {
   position: relative;
   width: 100vw;
@@ -843,6 +744,10 @@ input:checked + .slider:before {
   padding: 1rem 2rem;
   background: black;
   color: white;
+}
+
+.section h2 {
+  letter-spacing: 10px;
 }
 
 .tech {
@@ -941,7 +846,7 @@ input:checked + .slider:before {
     background-position: 70%;
   }
   .pimg4 {
-    background-position: 20%;
+    background-position: 30%;
   }
 }
 

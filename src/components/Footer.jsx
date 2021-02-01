@@ -10,9 +10,24 @@ const Footer = () => {
 	return (
 		<div className='footer-container'>
 			<div className='social-icons'>
-				<img src={facebook} alt='facebook' />
-				<img src={twitter} alt='twitter' />
-				<img src={instagram} alt='instagram' />
+				<a
+					href='https://www.facebook.com/Gentoo-Air-104268575010431'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<img src={facebook} alt='facebook' />
+				</a>
+				<a
+					href='https://twitter.com/AirGentoo'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<img src={twitter} alt='twitter' />
+				</a>
+				<a
+					href='https://www.instagram.com/gentooair/?hl=en'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<img src={instagram} alt='instagram' />
+				</a>
 			</div>
 			<div className='footer-text'>
 				<h4>#cleanair</h4>
