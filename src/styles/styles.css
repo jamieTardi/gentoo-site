@@ -1506,6 +1506,8 @@ input:checked + .slider:before {
 
 .technical-spec-container h1 {
   text-align: center;
+  background: #f5f5f5;
+  padding: 1rem;
 }
 
 .specs-and-img-container {
@@ -1569,6 +1571,7 @@ input:checked + .slider:before {
 
 .dark .technical-spec-container h1 {
   color: white;
+  background: #121212;
 }
 
 @media (max-width: 550px) {

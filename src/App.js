@@ -6,7 +6,13 @@ import {
 	Fans,
 	Humidifiers,
 } from './components/shop-pages/index';
-import { Homepage, ShopHome, AboutUs, Contact, ShopHome2 } from './pages/index';
+import {
+	Homepage,
+	ShopHome,
+	AboutUs,
+	Contact,
+	PurifierTech,
+} from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import {
 	Cart,
@@ -186,6 +192,12 @@ function App() {
 				</Route>
 				<Route exact path='/winix-zero-n'>
 					<WinixZeroN />
+				</Route>
+				<Route exact path='/winix-zero-pro'>
+					<WinixZeroPro />
+				</Route>
+				<Route exact path='/purifier-technical-spec'>
+					<PurifierTech />
 				</Route>
 			</Switch>
 			<Footer />

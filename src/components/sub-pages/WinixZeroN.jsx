@@ -9,7 +9,7 @@ const WinixZeroN = () => {
 	return (
 		<div>
 			<div className='technical-spec-container'>
-				<h1>Technical specs for the Winix Zero</h1>
+				<h1>Technical specs for the Winix Zero N</h1>
 				<div className='specs-and-img-container'>
 					<div className='specs-container'>
 						<div className='techspecs-small-container'>

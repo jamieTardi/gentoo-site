@@ -2,6 +2,7 @@ import React from 'react';
 import { techSpecs } from '../../lib/techSpecs';
 import blueTick from '../../assets/icons/blue-tick.svg';
 import redX from '../../assets/icons/red-x.svg';
+import winixZero from '../../assets/images/winix-zero.png';
 
 const WinixZero = () => {
 	const purifierDetails = techSpecs.purifiers[2];
@@ -106,7 +107,7 @@ const WinixZero = () => {
 					</div>
 				</div>
 				<div className='tech-img-container'>
-					<img src={purifierDetails.img} alt='winix zero' />
+					<img src={winixZero} alt='winix zero' />
 				</div>
 			</div>
 		</div>

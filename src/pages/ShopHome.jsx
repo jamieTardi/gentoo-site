@@ -2,32 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ShopHome = () => {
-	const shopInfo = [
-		{
-			title: 'Purifiers',
-			text:
-				'Click below to go to our shop for purifiers, in here you will be able to see a selection of our best purifiers and all of the technical specs associated with them.',
-			link: '/purifiers',
-		},
-		{
-			title: 'Cooling Fans',
-			text:
-				'Click below to go to our shop for cooling fans, in here you will be able to see a selection of our best cooling fans and all of the technical specs associated with them.',
-			link: '/fans',
-		},
-		{
-			title: 'Humidifiers',
-			text:
-				'Click below to go to our shop for humidifiers, in here you will be able to see a selection of our best humidifiers and all of the technical specs associated with them.',
-			link: '/humidifiers',
-		},
-		{
-			title: 'Heaters Coming soon',
-			text:
-				'Click below to go to our shop for heaters, in here you will be able to see a selection of our best heaters and all of the technical specs associated with them.',
-			link: '/',
-		},
-	];
 	return (
 		<>
 			<div className='main-and-text1'>
@@ -42,7 +16,9 @@ const ShopHome = () => {
 					<Link to='/purifiers'>
 						<button className='shop-btn'>Shop Now</button>
 					</Link>
-					<button className='shop-btn tech'>Technical Specs</button>
+					<Link to='/purifier-technical-spec'>
+						<button className='shop-btn tech'>Technical Specs</button>
+					</Link>
 				</div>
 			</div>
 			<section className='section'>

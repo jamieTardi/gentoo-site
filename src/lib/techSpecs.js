@@ -47,7 +47,7 @@ export const techSpecs = {
 		{
 			title: 'Winix Zero',
 			img:
-				'https://winixeurope.eu/wp-content/uploads/2019/01/Winix-Zero-Pro-2.png',
+				'https://winixeurope.eu/wp-content/uploads/2019/05/ECARF-Certified-air-purifier.png',
 			modelNo: 'AZBU330-HWB',
 			maxRoomCapacity: '99 m2',
 			maxAirFlow: '390 m3/h',
