@@ -184,6 +184,9 @@ function App() {
 				<Route exact path='/winix-zero'>
 					<WinixZero />
 				</Route>
+				<Route exact path='/winix-zero-n'>
+					<WinixZeroN />
+				</Route>
 			</Switch>
 			<Footer />
 		</div>

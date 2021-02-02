@@ -25,7 +25,7 @@ export const techSpecs = {
 		{
 			title: 'Winix Zero-N',
 			img:
-				'https://winixeurope.eu/wp-content/uploads/2019/01/Winix-Zero-Pro-2.png',
+				'https://winixeurope.eu/wp-content/uploads/2019/07/ZERO-N_Front_Grey-compressed.png',
 			modelNo: 'AZNU230-HWB',
 			maxRoomCapacity: '45 m2',
 			maxAirFlow: '330 m3/h',
