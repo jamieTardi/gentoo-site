@@ -31,15 +31,16 @@ const MiddleOfHome = () => {
 						<h3>Air Purifiers for a safer future</h3>
 					</NavHashLink>
 					<p className='middle-text'>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
-						commodi impedit omnis officia autem aliquam possimus nobis saepe
-						veritatis nam est inventore tenetur ipsa vitae quibusdam ut voluptas
-						incidunt quas, eligendi reiciendis. Eveniet beatae repudiandae
-						inventore quaerat excepturi? Porro incidunt nisi voluptas aut rem
-						odio quia labore voluptatibus neque, adipisci, eos, quaerat eaque
-						autem nobis vel molestiae consequuntur magni? Aliquam sit aperiam
-						omnis nulla iste eos, quas architecto saepe rerum ex ducimus error
-						hic provident, natus debitis itaque delectus cum?
+						WINIX air purifiers clean the indoor air quickly and effectively
+						from: viruses, bacteria, dust, particulate matter (PM2.5), pollen,
+						mold, pet dander, cooking smells, and cigarette smoke, helping
+						against respiratory diseases and allergies. WINIX air purifiers hold
+						the most important certifications in Europe and help to improve the
+						quality of life of people, all around the world. As a South-Korean
+						manufacturer, WINIX is worldwide known for its High Quality, and
+						High-Performance Air Purifiers, and is also recognized for the
+						development of PlasmaWave® Technology, which creates hydroxyls to
+						neutralize viruses and gases WITHOUT emitting harmful ozone.
 					</p>
 					<button className='learn-more'>Learn More</button>
 				</div>

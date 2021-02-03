@@ -11,18 +11,17 @@ const AboutUs = () => {
 				</div>
 				<div className='about-us-content'>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-						voluptas aspernatur! Et dignissimos eius veniam dolore pariatur
-						atque corporis ut excepturi cupiditate optio magni, aspernatur
-						beatae incidunt maxime eum praesentium quod, impedit suscipit, sint
-						ab laudantium laborum nulla tenetur earum. Nulla consectetur
-						accusamus dolores animi aspernatur, officiis rem odio ratione vitae,
-						nesciunt architecto at ipsam. Aliquid labore ducimus, tempore quidem
-						sapiente, sequi exercitationem aperiam nam consectetur dolor tempora
-						necessitatibus est architecto fuga, incidunt ratione porro iure illo
-						veniam deleniti libero non voluptas consequatur neque. Repellendus
-						fugit saepe commodi ex, blanditiis neque, maiores delectus explicabo
-						ad soluta odit temporibus natus facilis?
+						Gentoo was founded over a socially distanced coffee by Andy and
+						Chris. Following a decade plus career in IT and distribution they
+						decided that there was a gap in the market for an exciting and
+						nimble retailer selling solutions that improve everyday life.
+						<br />
+						<br /> We focus on clever design-lead products, which are frequently
+						funky, and we hope you agree are always interesting. <br />
+						<br />
+						We hope you enjoy our selection and if you have feedback or a
+						challenge that we might be able to find a solution for, we’d love to
+						hear from you: sales@gen-too.co.uk
 					</p>
 				</div>
 			</div>
