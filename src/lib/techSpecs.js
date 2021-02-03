@@ -102,6 +102,7 @@ export const techSpecs = {
 	fans: [
 		{
 			title: 'Boneco F100 Desk Fan',
+			id: 101,
 			voltage: '220 – 240V ~ 50Hz',
 			airSpeed: '4.1 m/sec',
 			blade: '150 mm',
@@ -113,6 +114,7 @@ export const techSpecs = {
 		},
 		{
 			title: 'Boneco F120 Air Shower',
+			id: 102,
 			voltage: '220 – 240V ~ 50Hz',
 			airSpeed: '4.1 m/sec',
 			blade: '150 mm',
@@ -124,6 +126,7 @@ export const techSpecs = {
 		},
 		{
 			title: 'Boneco F220 Air Shower',
+			id: 103,
 			voltage: '220 – 240V ~ 50Hz',
 			airSpeed: '3.9 m/sec',
 			blade: '225 mm',
@@ -135,6 +138,7 @@ export const techSpecs = {
 		},
 		{
 			title: 'Boneco F230 Air Shower',
+			id: 104,
 			voltage: '220 – 240V ~ 50Hz',
 			airSpeed: '3.9 m/sec',
 			blade: '225 mm',

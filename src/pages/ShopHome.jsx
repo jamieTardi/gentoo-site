@@ -37,7 +37,9 @@ const ShopHome = () => {
 					<Link to='/fans'>
 						<button className='shop-btn'>Shop Now</button>
 					</Link>
-					<button className='shop-btn tech'>Technical Specs</button>
+					<Link to='/fan-technical-spec'>
+						<button className='shop-btn tech'>Technical Specs</button>
+					</Link>
 				</div>
 			</div>
 			<section className='section'>

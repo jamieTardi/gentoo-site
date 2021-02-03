@@ -12,6 +12,7 @@ import {
 	AboutUs,
 	Contact,
 	PurifierTech,
+	FanTech,
 } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import {
@@ -19,10 +20,15 @@ import {
 	Checkout,
 	Conformation,
 } from './components/checkout-components/index';
+//technical spec imports
 import {
 	WinixZero,
 	WinixZeroN,
 	WinixZeroPro,
+	BonecoF100,
+	BonecoF120,
+	BonecoF220,
+	BonecoF230,
 } from './components/sub-pages/index';
 import { Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
@@ -198,6 +204,21 @@ function App() {
 				</Route>
 				<Route exact path='/purifier-technical-spec'>
 					<PurifierTech />
+				</Route>
+				<Route exact path='/boneco-f100'>
+					<BonecoF100 />
+				</Route>
+				<Route exact path='/boneco-f120'>
+					<BonecoF120 />
+				</Route>
+				<Route exact path='/boneco-f220'>
+					<BonecoF220 />
+				</Route>
+				<Route exact path='/boneco-f230'>
+					<BonecoF230 />
+				</Route>
+				<Route exact path='/fan-technical-spec'>
+					<FanTech />
 				</Route>
 			</Switch>
 			<Footer />
