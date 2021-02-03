@@ -29,6 +29,7 @@ import {
 	BonecoF120,
 	BonecoF220,
 	BonecoF230,
+	AtmosSpeaker,
 } from './components/sub-pages/index';
 import { Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
@@ -219,6 +220,9 @@ function App() {
 				</Route>
 				<Route exact path='/fan-technical-spec'>
 					<FanTech />
+				</Route>
+				<Route exact path='/atmos-speaker'>
+					<AtmosSpeaker />
 				</Route>
 			</Switch>
 			<Footer />
