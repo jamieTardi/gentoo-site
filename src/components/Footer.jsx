@@ -5,6 +5,7 @@ import mastercard from '../assets/icons/mastercard.svg';
 import twitter from '../assets/icons/twitter.svg';
 import visa from '../assets/icons/visa.svg';
 import instagram from '../assets/icons/instagram.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -39,6 +40,9 @@ const Footer = () => {
 					<br /> London , <br />
 					EC1V 9BD
 				</h6>
+				<Link to='terms-and-conditions'>
+					<p>Terms and Conditions</p>
+				</Link>
 			</div>
 			<div className='payment-icons'>
 				<img src={visa} alt='visa' />

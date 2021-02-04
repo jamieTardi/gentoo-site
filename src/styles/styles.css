@@ -1609,6 +1609,36 @@ input:checked + .slider:before {
   }
 }
 
+.terms-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 0rem 2rem;
+}
+
+.terms-container li {
+  margin-left: 1rem;
+  list-style-type: number !important;
+}
+
+.dark .terms-container {
+  background: #292929;
+}
+
+.dark .terms-container h1,
+.dark .terms-container h3 {
+  color: white;
+}
+
+.dark .terms-container p {
+  color: white;
+}
+
+.dark .terms-container ol li {
+  color: white;
+}
+
 * {
   border: 0;
   margin: 0;

@@ -14,6 +14,7 @@ import {
 	PurifierTech,
 	FanTech,
 	HumidTech,
+	Terms,
 } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import {
@@ -194,6 +195,9 @@ function App() {
 				</Route>
 				<Route exact path='/conformation'>
 					<Conformation />
+				</Route>
+				<Route exact path='/terms-and-conditions'>
+					<Terms />
 				</Route>
 				{/* subpages */}
 				<Route exact path='/winix-zero'>
