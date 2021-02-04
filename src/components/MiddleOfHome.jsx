@@ -7,6 +7,7 @@ import fan from '../assets/images/fan.webp';
 import hairDryer from '../assets/images/hairdryer-stock.jpg';
 import humidfier from '../assets/images/humidfiers.webp';
 import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const MiddleOfHome = () => {
 	return (
@@ -42,7 +43,9 @@ const MiddleOfHome = () => {
 						development of PlasmaWave® Technology, which creates hydroxyls to
 						neutralize viruses and gases WITHOUT emitting harmful ozone.
 					</p>
-					<button className='learn-more'>Learn More</button>
+					<Link to='/purifiers'>
+						<button className='learn-more'>Learn More</button>
+					</Link>
 				</div>
 			</div>
 			<div className='purifier-container'>

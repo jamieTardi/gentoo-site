@@ -90,7 +90,7 @@ export const techSpecs = {
 			material: 'Plastic',
 			wheels: 'No',
 			filterNeeded: 'No',
-			power: 'Eletric',
+			power: 'Electric',
 			capacity: '5L',
 			noiseLevel: '<35 dB(A)',
 			dimensions: '308 x 165 x 325 mm',

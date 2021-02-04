@@ -13,6 +13,7 @@ import {
 	Contact,
 	PurifierTech,
 	FanTech,
+	HumidTech,
 } from './pages/index';
 import { Navbar, Footer, MiddleOfHome } from './components/index';
 import {
@@ -30,6 +31,7 @@ import {
 	BonecoF220,
 	BonecoF230,
 	AtmosSpeaker,
+	U300,
 } from './components/sub-pages/index';
 import { Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
@@ -223,6 +225,12 @@ function App() {
 				</Route>
 				<Route exact path='/atmos-speaker'>
 					<AtmosSpeaker />
+				</Route>
+				<Route exact path='/u300'>
+					<U300 />
+				</Route>
+				<Route exact path='/humidifiers-technical-specs'>
+					<HumidTech />
 				</Route>
 			</Switch>
 			<Footer />

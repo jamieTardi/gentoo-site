@@ -57,7 +57,7 @@ const AtmosSpeaker = () => {
 					</div>
 				</div>
 				<div className='tech-img-container'>
-					<img src={atmosSpeaker} alt='boneco f100' />
+					<img src={atmosSpeaker} alt='atmos Speaker' />
 				</div>
 			</div>
 		</div>

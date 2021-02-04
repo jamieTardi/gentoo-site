@@ -58,7 +58,9 @@ const ShopHome = () => {
 					<Link to='/humidifiers'>
 						<button className='shop-btn'>Shop Now</button>
 					</Link>
-					<button className='shop-btn tech'>Technical Specs</button>
+					<Link to='/humidifiers-technical-specs'>
+						<button className='shop-btn tech'>Technical Specs</button>
+					</Link>
 				</div>
 			</div>
 
