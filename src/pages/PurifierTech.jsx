@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
 	WinixZero,
 	WinixZeroN,
@@ -6,6 +6,9 @@ import {
 } from '../components/sub-pages/index';
 
 const PurifierTech = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<WinixZero />
