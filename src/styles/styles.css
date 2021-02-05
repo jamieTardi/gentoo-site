@@ -16,6 +16,28 @@ nav .bars {
   display: none;
 }
 
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav .nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+nav .nav-link:hover {
+  text-decoration: none;
+  background: #ff5a24;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: white;
+}
+
 .dark nav {
   background: #292929;
   color: white;
@@ -144,7 +166,7 @@ input:checked + .slider:before {
     position: absolute;
     left: 5%;
   }
-  nav li {
+  nav .nav-link {
     display: none;
   }
   nav .trolley {
@@ -161,6 +183,7 @@ input:checked + .slider:before {
   }
   .darkmode-button {
     margin-top: 0rem;
+    padding-left: 4rem;
   }
   .mobile-overlay {
     position: fixed;
@@ -1039,7 +1062,9 @@ input:checked + .slider:before {
 
 .about-us-card {
   width: 30%;
-  height: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border: none;
   z-index: 3;
   position: absolute;
@@ -1078,6 +1103,12 @@ input:checked + .slider:before {
       -ms-flex-align: center;
           align-items: center;
   padding: 0rem 2rem;
+}
+
+@media (max-width: 1200px) {
+  .about-us-card {
+    width: 45%;
+  }
 }
 
 @media (max-width: 550px) {
