@@ -16,7 +16,7 @@ import {
 	HumidTech,
 	Terms,
 } from './pages/index';
-import { Navbar, Footer, MiddleOfHome } from './components/index';
+import { Navbar, Footer, MiddleOfHome, Modal } from './components/index';
 import {
 	Cart,
 	Checkout,
@@ -38,6 +38,7 @@ import { Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 
 function App() {
+	const [hideModal, setHideModal] = useState(true);
 	const [darkMode, setDarkMode] = useState(false);
 	const [hideMiniNav, setHideMiniNav] = useState(true);
 	const [products, setProducts] = useState([]);
@@ -64,6 +65,7 @@ function App() {
 		try {
 			const { cart } = await commerce.cart.add(productId, quantity);
 			setCart(cart);
+			setHideModal(false);
 		} catch (err) {
 			console.log(err);
 		}
@@ -122,6 +124,7 @@ function App() {
 	}, []);
 	return (
 		<div className={darkMode ? 'app dark' : 'app'}>
+			<Modal hideModal={hideModal} setHideModal={setHideModal} />
 			<Navbar
 				setDarkMode={setDarkMode}
 				darkMode={darkMode}

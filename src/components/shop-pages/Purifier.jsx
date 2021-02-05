@@ -1,7 +1,8 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
+import { Modal } from '../index';
 
-const Purifier = ({ products, handleUpdateCart, vatPrice }) => {
+const Purifier = ({ products, handleUpdateCart, vatPrice, setHideModal }) => {
 	return (
 		<>
 			{products.length === 0 ? (
@@ -14,7 +15,6 @@ const Purifier = ({ products, handleUpdateCart, vatPrice }) => {
 						<div key={purifier.name}>
 							{purifier.categories[0].id === 'cat_N7GKwbBGvw3EX4' ? (
 								<div className='indivdual-item' key={purifier.name}>
-									{console.log(purifier)}
 									<img
 										src={
 											purifier.media.source ? purifier.media.source : Loading
