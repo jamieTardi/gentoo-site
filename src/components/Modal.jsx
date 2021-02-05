@@ -17,12 +17,12 @@ const Modal = ({ hideModal, setHideModal }) => {
 						}}>
 						Continue Shopping
 					</button>
-					<Link to='/checkout'>
+					<Link to='/cart'>
 						<button
 							onClick={() => {
 								setHideModal(true);
 							}}>
-							Go to checkout
+							Go to cart
 						</button>
 					</Link>
 				</div>
