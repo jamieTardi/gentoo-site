@@ -36,6 +36,7 @@ import {
 } from './components/sub-pages/index';
 import { Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
+import createHistory from 'history/createBrowserHistory';
 
 function App() {
 	const [hideModal, setHideModal] = useState(true);
@@ -47,6 +48,11 @@ function App() {
 	const [order, setOrder] = useState({});
 	const [shippingCost, setShippingCost] = useState('');
 
+	const history = createHistory();
+
+	history.listen((location, action) => {
+		window.scrollTo(0, 0);
+	});
 	//Get the initial shop products save them to state
 	const fetchProducts = async () => {
 		const { data } = await commerce.products.list();
