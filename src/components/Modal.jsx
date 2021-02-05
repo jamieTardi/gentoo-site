@@ -8,7 +8,7 @@ const Modal = ({ hideModal, setHideModal }) => {
 				<h3>Item successfully added to cart!</h3>
 				<p>
 					If you would like to continue shopping press continue, or if you would
-					like to head to the checkout Click on head to check out.
+					like to head to the checkout Click on head to Cart.
 				</p>
 				<div className='modal-btns'>
 					<button
@@ -22,7 +22,7 @@ const Modal = ({ hideModal, setHideModal }) => {
 							onClick={() => {
 								setHideModal(true);
 							}}>
-							Go to cart
+							Go to Cart
 						</button>
 					</Link>
 				</div>
