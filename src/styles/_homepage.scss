@@ -110,7 +110,7 @@
 }
 
 .icons-container-middle {
-	height: 100%;
+	min-height: 100%;
 	width: 40%;
 	display: flex;
 	justify-content: space-around;
@@ -148,6 +148,7 @@
 	padding: 1rem 0rem;
 	height: 50%;
 	width: 75%;
+	margin-bottom: 1rem;
 }
 
 .learn-more {
@@ -200,8 +201,6 @@
 		left: 1.6%;
 	}
 
-	.overlay2 {
-	}
 	.overlay3 {
 		top: 0%;
 		right: 1.6%;
@@ -210,6 +209,16 @@
 		min-height: 100%;
 		width: 30%;
 		background: url('../assets/images/fan-hero.png');
+		background-size: cover;
+		background-position: 60%;
+	}
+	.thumbnail2 {
+		background: url('../assets/images/humidfiers.webp');
+		background-size: cover;
+		background-position: 60%;
+	}
+	.thumbnail3 {
+		background: url('../assets/images/purifier-room.jpg');
 		background-size: cover;
 		background-position: 60%;
 	}
@@ -257,18 +266,7 @@
 		}
 	}
 	.image-thumbnails {
-		width: 100vw;
-		flex-direction: column;
-		height: 50vh;
-		margin-left: 1.2rem;
-		margin-top: 5rem;
-		img {
-			object-fit: cover;
-			height: 40%;
-			max-width: 90%;
-			object-position: 70%;
-			margin-top: 1rem;
-		}
+		min-width: 100vw;
 	}
 }
 
