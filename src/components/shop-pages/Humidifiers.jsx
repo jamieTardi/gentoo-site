@@ -1,5 +1,6 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
+import { Link } from 'react-router-dom';
 
 const Humidifiers = ({ products, handleUpdateCart, vatPrice }) => {
 	return (
@@ -35,6 +36,17 @@ const Humidifiers = ({ products, handleUpdateCart, vatPrice }) => {
 												}}>
 												Add to Basket
 											</button>
+											{humidifier.id === 'prod_O3bR5XJJAwnzdj' ? (
+												<Link to='/atmos-speaker'>
+													<button>Tech Specs</button>
+												</Link>
+											) : humidifier.id === 'prod_RyWOwmJbKonEa2' ? (
+												<Link to='/u300'>
+													<button>Tech Specs</button>
+												</Link>
+											) : (
+												''
+											)}
 											<h4>£{vatPrice(humidifier.price.raw)} incl VAT</h4>
 										</div>
 									</div>

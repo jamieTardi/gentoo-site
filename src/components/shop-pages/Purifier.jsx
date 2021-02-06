@@ -1,6 +1,6 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
-import { Modal } from '../index';
+import { Link } from 'react-router-dom';
 
 const Purifier = ({ products, handleUpdateCart, vatPrice, setHideModal }) => {
 	return (
@@ -34,6 +34,21 @@ const Purifier = ({ products, handleUpdateCart, vatPrice, setHideModal }) => {
 												}}>
 												Add to Basket
 											</button>
+											{purifier.id === 'prod_7ZAMo1vx75NJ4x' ? (
+												<Link to='/winix-zero-pro'>
+													<button>Tech Specs</button>
+												</Link>
+											) : purifier.id === 'prod_9BAmwJvm4weXdn' ? (
+												<Link to='/winix-zero-n'>
+													<button>Tech Specs</button>
+												</Link>
+											) : purifier.id === 'prod_mOVKl4BRYoprRP' ? (
+												<Link to='/winix-zero'>
+													<button>Tech Specs</button>
+												</Link>
+											) : (
+												''
+											)}
 											<h4>£{vatPrice(purifier.price.raw)} incl VAT</h4>
 										</div>
 									</div>

@@ -1040,7 +1040,7 @@ input:checked + .slider:before {
 }
 
 .button-and-price {
-  width: 75%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1097,6 +1097,12 @@ input:checked + .slider:before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .button-and-price h4 {
+    font-size: 1rem;
+  }
+  .button-and-price button {
+    padding: 0.4rem 0.7rem;
   }
 }
 

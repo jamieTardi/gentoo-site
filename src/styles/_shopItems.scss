@@ -57,7 +57,7 @@
 }
 
 .button-and-price {
-	width: 75%;
+	width: 95%;
 	display: flex;
 	justify-content: space-around;
 	button {
@@ -95,5 +95,11 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		h4 {
+			font-size: 1rem;
+		}
+		button {
+			padding: 0.4rem 0.7rem;
+		}
 	}
 }

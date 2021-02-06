@@ -1,5 +1,6 @@
 import React from 'react';
 import Loading from '../../assets/icons/loading.gif';
+import { Link } from 'react-router-dom';
 
 const Fans = ({ products, handleUpdateCart, vatPrice }) => {
 	return (
@@ -26,6 +27,23 @@ const Fans = ({ products, handleUpdateCart, vatPrice }) => {
 											<button onClick={() => handleUpdateCart(fan.id, 1)}>
 												Add to Basket
 											</button>
+											{fan.id === 'prod_ZM8X5nJe85pv4q' ? (
+												<Link to='/boneco-f100'>
+													<button>Tech Specs</button>
+												</Link>
+											) : fan.id === 'prod_gvRjwOPpRo4mNL' ? (
+												<Link to='/boneco-f120'>
+													<button>Tech Specs</button>
+												</Link>
+											) : fan.id === 'prod_N7GKwbJ6vw3EX4' ? (
+												<Link to='/boneco-f220'>
+													<button>Tech Specs </button>
+												</Link>
+											) : (
+												<Link to='/boneco-f230'>
+													<button>Tech Specs</button>
+												</Link>
+											)}
 											<h4>£{vatPrice(fan.price.raw)} incl VAT</h4>
 										</div>
 									</div>
