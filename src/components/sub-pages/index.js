@@ -7,3 +7,4 @@ export { default as BonecoF220 } from './BonecoF220';
 export { default as BonecoF230 } from './BonecoF230';
 export { default as AtmosSpeaker } from './AtmosSpeaker';
 export { default as U300 } from './U300';
+export { default as HomePurifier } from './HomePurifier';

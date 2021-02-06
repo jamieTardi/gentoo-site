@@ -453,23 +453,56 @@ input:checked + .slider:before {
 }
 
 .image-thumbnails {
-  height: 40%;
-  width: 60vw;
+  height: 20vh;
+  max-width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
 }
 
-.image-thumbnails img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 40%;
-  max-width: 25%;
-  -o-object-position: 70%;
-     object-position: 70%;
-  margin-top: 4rem;
+.image-thumbnails .overlay,
+.image-thumbnails .overlay2,
+.image-thumbnails .overlay3 {
+  position: absolute;
+  z-index: 3;
+}
+
+.image-thumbnails .overlay {
+  width: 30%;
+  height: 100%;
+  top: 0%;
+  left: 1.6%;
+  background: rgba(18, 18, 18, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+
+.image-thumbnails .overlay button {
+  padding: 0.4rem 0.7rem;
+  background: black;
+}
+
+.image-thumbnails .thumbnail-image {
+  min-height: 100%;
+  width: 30%;
+  background: url("../assets/images/fan-hero.png");
+  background-size: cover;
+  background-position: 60%;
 }
 
 @media (max-width: 900px) {
