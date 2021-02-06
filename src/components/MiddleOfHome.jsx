@@ -1,16 +1,31 @@
 import React, { useState } from 'react';
 
-import { HomePurifier, HomeFan } from '../components/sub-pages/index';
+import {
+	HomePurifier,
+	HomeFan,
+	HomeHumid,
+} from '../components/sub-pages/index';
 
 const MiddleOfHome = () => {
 	const [toggleOverlay, setToggleOverlay] = useState(true);
 	const [purifierMain, setPurifierMain] = useState(true);
+	const [fanMain, setFanMain] = useState(false);
+	const [humidMain, setHumidMain] = useState(false);
+
+	const fanToggle = () => {
+		setPurifierMain(false);
+		setFanMain(true);
+	};
 	return (
 		<div className='middle-container'>
 			{purifierMain ? (
 				<HomePurifier purifierMain={purifierMain} />
+			) : fanMain ? (
+				<HomeFan />
+			) : humidMain ? (
+				<HomeHumid />
 			) : (
-				<HomeFan purifierMain={purifierMain} />
+				''
 			)}
 
 			<div className='image-thumbnails thumbnail'>
@@ -24,14 +39,14 @@ const MiddleOfHome = () => {
 					className={toggleOverlay ? 'hide' : 'overlay'}>
 					<button
 						onClick={() => {
-							setPurifierMain(false);
+							fanToggle();
 						}}>
 						Cooling
 					</button>
 				</div>
 				<div className='thumbnail-image'></div>
 				<div className='overlay2'>
-					<button>Cooling</button>
+					<button>Humidifiers</button>
 				</div>
 				<div className='thumbnail-image'></div>
 				<div className='overlay3'>

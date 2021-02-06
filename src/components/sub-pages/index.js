@@ -9,3 +9,4 @@ export { default as AtmosSpeaker } from './AtmosSpeaker';
 export { default as U300 } from './U300';
 export { default as HomePurifier } from './HomePurifier';
 export { default as HomeFan } from './HomeFan';
+export { default as HomeHumid } from './HomeHumid';

@@ -472,13 +472,8 @@ input:checked + .slider:before {
 .image-thumbnails .overlay3 {
   position: absolute;
   z-index: 3;
-}
-
-.image-thumbnails .overlay {
   width: 30%;
   height: 100%;
-  top: 0%;
-  left: 1.6%;
   background: rgba(18, 18, 18, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,12 +484,23 @@ input:checked + .slider:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 5;
 }
 
-.image-thumbnails .overlay button {
+.image-thumbnails .overlay button,
+.image-thumbnails .overlay2 button,
+.image-thumbnails .overlay3 button {
   padding: 0.4rem 0.7rem;
   background: black;
+}
+
+.image-thumbnails .overlay {
+  top: 0%;
+  left: 1.6%;
+}
+
+.image-thumbnails .overlay3 {
+  top: 0%;
+  right: 1.6%;
 }
 
 .image-thumbnails .thumbnail-image {

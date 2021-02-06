@@ -184,21 +184,27 @@
 	.overlay3 {
 		position: absolute;
 		z-index: 3;
-	}
-	.overlay {
 		width: 30%;
 		height: 100%;
-		top: 0%;
-		left: 1.6%;
 		background: rgba(18, 18, 18, 0.5);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		z-index: 5;
 		button {
 			padding: 0.4rem 0.7rem;
 			background: black;
 		}
+	}
+	.overlay {
+		top: 0%;
+		left: 1.6%;
+	}
+
+	.overlay2 {
+	}
+	.overlay3 {
+		top: 0%;
+		right: 1.6%;
 	}
 	.thumbnail-image {
 		min-height: 100%;
