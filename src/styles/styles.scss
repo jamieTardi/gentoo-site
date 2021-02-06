@@ -8,7 +8,9 @@
 @import './contact';
 @import './cart';
 @import './payment';
-
+@import './technicalSpecs';
+@import './terms';
+@import './modal';
 // global styles
 * {
 	border: 0;
@@ -18,7 +20,8 @@
 }
 body {
 	overflow-x: hidden;
-	height: fit-content;
+	height: 100%;
+	margin: 0;
 }
 
 a {

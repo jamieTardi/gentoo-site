@@ -1,67 +1,156 @@
-.shop-home-container {
-	height: 80vh;
-	width: 100%;
-	display: flex;
-}
-.dark {
-	.shop-home-container {
-		background: #292929;
-		color: white;
-	}
-}
-.shop-items-container {
+//parallax
+
+.main-and-text1 {
+	position: relative;
 	width: 100vw;
-	height: 100%;
-}
-.shop-item {
-	width: 100%;
-	height: 100%;
-	display: flex;
-}
-
-.shop-item-odd {
-	width: 100%;
-	height: 100%;
-	display: flex;
-}
-
-.shop-item,
-.shop-item-odd {
-	flex-direction: column;
-	img {
-		width: 100%;
-		height: 50%;
-		object-fit: cover;
+	height: fit-content;
+	.ptext {
+		position: absolute;
+		width: 30%;
+		margin-left: 5rem;
+		height: 250px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
+		color: white;
+		top: 20%;
+		span {
+			font-size: 3rem;
+			border: none !important;
+			background: transparent;
+			color: white;
+			font-weight: 700;
+		}
+		button {
+			padding: 1rem 2rem;
+			background: black;
+			color: white;
+		}
 	}
 }
 
-.shop-item-odd-text,
-.shop-item-text {
-	height: 50%;
-	width: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+.main-and-text2 {
+	position: relative;
+	.ptext2,
+	.ptext3,
+	.ptext4 {
+		width: 30%;
+		margin-left: 5rem;
+		height: 250px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
+		color: white;
+		position: absolute;
+		top: 20%;
+		span {
+			font-size: 3rem;
+			border: none !important;
+			background: transparent;
+			color: white;
+			font-weight: 700;
+		}
+		button {
+			padding: 1rem 2rem;
+			background: black;
+			color: white;
+		}
+	}
+}
+
+.section {
+	h2 {
+		letter-spacing: 10px;
+	}
+}
+
+.tech {
+	margin-top: 1rem;
+}
+
+.dark {
+	.section {
+		background-color: #292929;
+		h2 {
+			color: white;
+		}
+		p {
+			background-color: #292929;
+			color: white;
+		}
+	}
+}
+.section {
 	text-align: center;
-	padding: 0rem 1.5rem;
-	button {
-		padding: 1rem 2rem;
-		background: black;
-		font-size: 1.4rem;
+	height: fit-content;
+	width: 100%;
+	background-color: #f5f5f5;
+	margin-bottom: 0rem;
+	padding: 1rem 2rem;
+	p {
+		margin-bottom: 0rem;
+		padding-bottom: 1rem;
+		background-color: #f5f5f5;
 	}
+}
+
+.ptext3 {
+	top: 280%;
+}
+
+.ptext4 {
+	top: 380%;
+}
+
+.pimg1 {
+	background-image: url('../assets/images/bedroom.jpg');
+	filter: brightness(55%);
+	background-attachment: fixed;
+	min-height: 100vh;
+	z-index: 0;
+}
+.pimg2 {
+	background-image: url('../assets/images/fan-hero.png');
+	background-attachment: fixed;
+	min-height: 100vh;
+	filter: brightness(55%);
+}
+.pimg3 {
+	background-image: url('../assets/images/humidfiers.webp');
+	background-attachment: fixed;
+	min-height: 100vh;
+	filter: brightness(55%);
+}
+.pimg4 {
+	background-image: url('../assets/images/heater-room.jpg');
+	background-attachment: fixed;
+	min-height: 100vh;
+	filter: brightness(55%);
 }
 
 @media (max-width: 550px) {
-	.shop-home-container {
-		height: fit-content;
-		flex-direction: column;
+	.ptext,
+	.ptext2,
+	.ptext3,
+	.ptext4 {
+		min-width: 70%;
+		margin-left: 0rem;
 	}
-	.shop-item-odd {
-		flex-direction: column-reverse;
+	.padding {
+		padding: 1rem 0rem;
 	}
-	.shop-item-odd-text,
-	.shop-item-text {
-		height: 300px;
+	.pimg1 {
+		background-position: 70%;
+	}
+	.pimg2 {
+		background-position: 70%;
+	}
+	.pimg3 {
+		background-position: 70%;
+	}
+	.pimg4 {
+		background-position: 30%;
 	}
 }

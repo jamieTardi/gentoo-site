@@ -19,17 +19,17 @@ const Navbar = ({
 			<nav>
 				<ul className='navbar'>
 					<Link to='/'>
-						<li>Home</li>
+						<li className='nav-link'>Home</li>
 					</Link>
 					<Link to='/about-us'>
-						<li>About Us</li>
+						<li className='nav-link'>About Us</li>
 					</Link>
 					<img src={darkMode ? logoLight : logo} alt='Gentoo Logo' />
 					<Link to='/shophome'>
-						<li>Shop</li>
+						<li className='nav-link'>Shop</li>
 					</Link>
 					<Link to='/contact-us'>
-						<li>Contact us</li>
+						<li className='nav-link'>Contact us</li>
 					</Link>
 				</ul>
 				<div className='trolley'>

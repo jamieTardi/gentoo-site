@@ -6,22 +6,40 @@ import {
 	Fans,
 	Humidifiers,
 } from './components/shop-pages/index';
-import { Homepage, ShopHome, AboutUs, Contact } from './pages/index';
-import { Navbar, Footer, MiddleOfHome } from './components/index';
+import {
+	Homepage,
+	ShopHome,
+	AboutUs,
+	Contact,
+	PurifierTech,
+	FanTech,
+	HumidTech,
+	Terms,
+} from './pages/index';
+import { Navbar, Footer, MiddleOfHome, Modal } from './components/index';
 import {
 	Cart,
 	Checkout,
 	Conformation,
 } from './components/checkout-components/index';
+//technical spec imports
 import {
 	WinixZero,
 	WinixZeroN,
 	WinixZeroPro,
+	BonecoF100,
+	BonecoF120,
+	BonecoF220,
+	BonecoF230,
+	AtmosSpeaker,
+	U300,
 } from './components/sub-pages/index';
 import { Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
+import createHistory from 'history/createBrowserHistory';
 
 function App() {
+	const [hideModal, setHideModal] = useState(true);
 	const [darkMode, setDarkMode] = useState(false);
 	const [hideMiniNav, setHideMiniNav] = useState(true);
 	const [products, setProducts] = useState([]);
@@ -30,6 +48,11 @@ function App() {
 	const [order, setOrder] = useState({});
 	const [shippingCost, setShippingCost] = useState('');
 
+	const history = createHistory();
+
+	history.listen((location, action) => {
+		window.scrollTo(0, 0);
+	});
 	//Get the initial shop products save them to state
 	const fetchProducts = async () => {
 		const { data } = await commerce.products.list();
@@ -48,6 +71,7 @@ function App() {
 		try {
 			const { cart } = await commerce.cart.add(productId, quantity);
 			setCart(cart);
+			setHideModal(false);
 		} catch (err) {
 			console.log(err);
 		}
@@ -106,6 +130,7 @@ function App() {
 	}, []);
 	return (
 		<div className={darkMode ? 'app dark' : 'app'}>
+			<Modal hideModal={hideModal} setHideModal={setHideModal} />
 			<Navbar
 				setDarkMode={setDarkMode}
 				darkMode={darkMode}
@@ -180,9 +205,45 @@ function App() {
 				<Route exact path='/conformation'>
 					<Conformation />
 				</Route>
+				<Route exact path='/terms-and-conditions'>
+					<Terms />
+				</Route>
 				{/* subpages */}
 				<Route exact path='/winix-zero'>
 					<WinixZero />
+				</Route>
+				<Route exact path='/winix-zero-n'>
+					<WinixZeroN />
+				</Route>
+				<Route exact path='/winix-zero-pro'>
+					<WinixZeroPro />
+				</Route>
+				<Route exact path='/purifier-technical-spec'>
+					<PurifierTech />
+				</Route>
+				<Route exact path='/boneco-f100'>
+					<BonecoF100 />
+				</Route>
+				<Route exact path='/boneco-f120'>
+					<BonecoF120 />
+				</Route>
+				<Route exact path='/boneco-f220'>
+					<BonecoF220 />
+				</Route>
+				<Route exact path='/boneco-f230'>
+					<BonecoF230 />
+				</Route>
+				<Route exact path='/fan-technical-spec'>
+					<FanTech />
+				</Route>
+				<Route exact path='/atmos-speaker'>
+					<AtmosSpeaker />
+				</Route>
+				<Route exact path='/u300'>
+					<U300 />
+				</Route>
+				<Route exact path='/humidifiers-technical-specs'>
+					<HumidTech />
 				</Route>
 			</Switch>
 			<Footer />

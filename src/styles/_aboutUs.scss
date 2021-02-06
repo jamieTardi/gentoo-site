@@ -32,7 +32,7 @@
 
 .about-us-card {
 	width: 30%;
-	height: 80%;
+	height: fit-content;
 	border: none;
 	z-index: 3;
 	position: absolute;
@@ -54,6 +54,12 @@
 	width: 100%;
 	@include flex-mid;
 	padding: 0rem 2rem;
+}
+
+@media (max-width: 1200px) {
+	.about-us-card {
+		width: 45%;
+	}
 }
 
 @media (max-width: 550px) {

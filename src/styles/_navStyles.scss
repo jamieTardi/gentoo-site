@@ -13,6 +13,23 @@ nav {
 	.bars {
 		display: none;
 	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.nav-link {
+		padding: 0.5rem 1rem;
+		border-radius: 1rem;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+			background: #ff5a24;
+			transition: all 1s ease;
+			color: white;
+		}
+	}
 }
 .dark {
 	nav {
@@ -26,6 +43,10 @@ nav {
 
 .darkmode-button {
 	margin-top: 5rem;
+	margin-right: 2rem;
+	width: 250px;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .navbar {
@@ -117,7 +138,7 @@ input:checked + .slider:before {
 				left: 5%;
 			}
 		}
-		li {
+		.nav-link {
 			display: none;
 		}
 
@@ -136,6 +157,7 @@ input:checked + .slider:before {
 	}
 	.darkmode-button {
 		margin-top: 0rem;
+		padding-left: 4rem;
 	}
 	.mobile-overlay {
 		position: fixed;
