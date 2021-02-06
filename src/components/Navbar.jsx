@@ -65,7 +65,7 @@ const Navbar = ({
 			</nav>
 			<div className={hideMiniNav ? 'hide mobile-overlay' : 'mobile-overlay'}>
 				<div className='mini-nav'>
-					<MiniNav setHideMiniNav={setHideMiniNav} />
+					<MiniNav setHideMiniNav={setHideMiniNav} darkMode={darkMode} />
 				</div>
 			</div>
 		</>

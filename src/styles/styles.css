@@ -193,6 +193,9 @@ input:checked + .slider:before {
     background: white;
     z-index: 9000;
   }
+  .dark .mobile-overlay {
+    background: #292929;
+  }
   .mini-nav {
     width: 90vw;
     height: 15vh;
@@ -654,7 +657,38 @@ input:checked + .slider:before {
   padding-bottom: 1rem;
 }
 
+.fan-container {
+  background: #f5f5f5;
+}
+
+.dark .fan-container {
+  background: #292929;
+}
+
+.virus-info-img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 1rem;
+}
+
+.virus-info-img img {
+  width: 96%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 900px) {
+  .virus-info-img {
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+  }
+  .virus-info-img img {
+    width: 100%;
+  }
   .bottom-text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1185,9 +1219,9 @@ input:checked + .slider:before {
 
 .fan-video {
   min-width: 100%;
-  max-height: 70vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 85vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .form {
@@ -1256,6 +1290,22 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 70%;
+}
+
+@media (min-width: 1300px) {
+  .fan-video {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .fan-video {
+    height: 50vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 550px) {

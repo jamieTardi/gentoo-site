@@ -167,6 +167,12 @@ input:checked + .slider:before {
 		background: white;
 		z-index: 9000;
 	}
+
+	.dark {
+		.mobile-overlay {
+			background: #292929;
+		}
+	}
 	.mini-nav {
 		width: 90vw;
 		height: 15vh;
@@ -181,6 +187,7 @@ input:checked + .slider:before {
 			align-items: center;
 		}
 	}
+
 	.mini-nav-items {
 		ul {
 			li {

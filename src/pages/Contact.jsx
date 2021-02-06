@@ -5,9 +5,11 @@ import fanVideo from '../assets/videos/fan-video.mp4';
 const Contact = () => {
 	return (
 		<div className='contact-container'>
-			<video autoPlay muted loop className='fan-video'>
-				<source src={fanVideo} type='video/mp4' />
-			</video>
+			<div className='fan-container'>
+				<video autoPlay muted loop className='fan-video'>
+					<source src={fanVideo} type='video/mp4' />
+				</video>
+			</div>
 			<div className='form'>
 				<Form />
 			</div>

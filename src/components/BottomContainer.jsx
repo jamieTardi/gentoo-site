@@ -3,6 +3,8 @@ import purifier1 from '../assets/images/purifier-room.jpg';
 import purifier2 from '../assets/images/purifier-room2.jpg';
 import livingRoom from '../assets/images/living-room.webp';
 import bedroom from '../assets/images/bedroom.jpg';
+import fanVideo from '../assets/videos/fan-video.mp4';
+import virusInfo from '../assets/images/virus-info.jpg';
 
 const BottomContainer = () => {
 	return (
@@ -23,6 +25,14 @@ const BottomContainer = () => {
 						your office space.
 					</p>
 				</div>
+			</div>
+			<div className='virus-info-img'>
+				<img src={virusInfo} alt='virus info' />
+			</div>
+			<div className='fan-container'>
+				<video autoPlay muted loop className='fan-video'>
+					<source src={fanVideo} type='video/mp4' />
+				</video>
 			</div>
 		</>
 	);
