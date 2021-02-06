@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
-import leaf from '../assets/icons/leaf.svg';
-import energy from '../assets/icons/energy.svg';
-import virus from '../assets/icons/virus.svg';
-import purifier from '../assets/images/purifier.png';
 
-import { HomePurifier } from '../components/sub-pages/index';
+import { HomePurifier, HomeFan } from '../components/sub-pages/index';
 
 const MiddleOfHome = () => {
 	const [toggleOverlay, setToggleOverlay] = useState(true);
 	const [purifierMain, setPurifierMain] = useState(true);
 	return (
 		<div className='middle-container'>
-			<HomePurifier />
-			<div className='purifier-container'>
-				<img src={purifier} alt='purifier' />
-			</div>
+			{purifierMain ? (
+				<HomePurifier purifierMain={purifierMain} />
+			) : (
+				<HomeFan purifierMain={purifierMain} />
+			)}
+
 			<div className='image-thumbnails thumbnail'>
 				<div
 					onMouseEnter={() => {
@@ -24,7 +22,12 @@ const MiddleOfHome = () => {
 				<div
 					onMouseLeave={() => setToggleOverlay(true)}
 					className={toggleOverlay ? 'hide' : 'overlay'}>
-					<button>Cooling</button>
+					<button
+						onClick={() => {
+							setPurifierMain(false);
+						}}>
+						Cooling
+					</button>
 				</div>
 				<div className='thumbnail-image'></div>
 				<div className='overlay2'>

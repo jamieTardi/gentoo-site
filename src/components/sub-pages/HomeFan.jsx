@@ -4,9 +4,9 @@ import energy from '../../assets/icons/energy.svg';
 import virus from '../../assets/icons/virus.svg';
 import { NavHashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import purifier from '../../assets/images/purifier.png';
+import fans from '../../assets/images/boneco-f220.png';
 
-const HomePurifier = () => {
+const HomeFan = () => {
 	return (
 		<div>
 			<div className='top-middle'>
@@ -26,30 +26,26 @@ const HomePurifier = () => {
 						</div>
 					</div>
 					<NavHashLink to='/middle#middle'>
-						<h3>Air Purifiers for a safer future</h3>
+						<h3>Air Shower Fans</h3>
 					</NavHashLink>
 					<p className='middle-text'>
-						WINIX air purifiers clean the indoor air quickly and effectively
-						from: viruses, bacteria, dust, particulate matter (PM2.5), pollen,
-						mold, pet dander, cooking smells, and cigarette smoke, helping
-						against respiratory diseases and allergies. WINIX air purifiers hold
-						the most important certifications in Europe and help to improve the
-						quality of life of people, all around the world. As a South-Korean
-						manufacturer, WINIX is worldwide known for its High Quality, and
-						High-Performance Air Purifiers, and is also recognized for the
-						development of PlasmaWave® Technology, which creates hydroxyls to
-						neutralize viruses and gases WITHOUT emitting harmful ozone.
+						If you feel especially good indoors, it could be due to the
+						professional air treatment provided by our products from BONECO
+						healthy air. That’s because they provide a noticeable improvement of
+						the air inside a room as well as a beneficial indoor climate. The
+						optimal indoor air not only positively influences your wellbeing,
+						but also your health.
 					</p>
-					<Link to='/purifiers'>
+					<Link to='/fans'>
 						<button className='learn-more'>Learn More</button>
 					</Link>
 				</div>
 			</div>
 			<div className='purifier-container'>
-				<img src={purifier} alt='purifier' />
+				<img src={fans} alt='fan' />
 			</div>
 		</div>
 	);
 };
 
-export default HomePurifier;
+export default HomeFan;
