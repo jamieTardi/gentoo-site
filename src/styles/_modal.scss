@@ -51,6 +51,12 @@
 	}
 }
 
+@media (max-width: 550px) {
+	.modal-card {
+		min-width: 90vw;
+	}
+}
+
 @media (max-width: 1200px) {
 	.modal-card {
 		width: 40%;
