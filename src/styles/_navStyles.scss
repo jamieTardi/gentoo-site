@@ -125,6 +125,17 @@ input:checked + .slider:before {
 }
 @media (max-width: 900px) {
 	nav {
+		.logo-container-small {
+			height: 100%;
+			width: fit-content;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			img {
+				height: 100%;
+				width: 60%;
+			}
+		}
 		ul {
 			width: fit-content;
 			height: fit-content;

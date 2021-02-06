@@ -24,7 +24,11 @@ const Navbar = ({
 					<Link to='/about-us'>
 						<li className='nav-link'>About Us</li>
 					</Link>
-					<img src={darkMode ? logoLight : logo} alt='Gentoo Logo' />
+
+					<Link className='logo-container-small' to='/'>
+						<img src={darkMode ? logoLight : logo} alt='Gentoo Logo' />
+					</Link>
+
 					<Link to='/shophome'>
 						<li className='nav-link'>Shop</li>
 					</Link>
