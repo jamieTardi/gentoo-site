@@ -32,14 +32,13 @@ const Footer = () => {
 			</div>
 			<div className='footer-text'>
 				<h4>#cleanair</h4>
+				<h6>Website design by Tardi Digital Media</h6>
 				<h6>
-					Website design by Tardi Digital Media
-					<br /> <a href='https://www.jamietardi.co.uk'>www.jamietardi.co.uk</a>
-					<br /> All website content is copyright of Gentoo Ltd.
-					<br /> 130 Old street
-					<br /> London , <br />
-					EC1V 9BD
+					<a href='https://www.jamietardi.co.uk'>www.jamietardi.co.uk</a>
 				</h6>
+				<h6>All website content is copyright of Gentoo Ltd </h6>
+				<h6>130 Old street London</h6>
+				<h6>EC1V 9BD</h6>
 				<Link to='terms-and-conditions'>
 					<p>Terms and Conditions</p>
 				</Link>
