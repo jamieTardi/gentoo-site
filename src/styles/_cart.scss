@@ -173,12 +173,15 @@
 
 @media (max-width: 900px) {
 	.cart-items-container {
-		min-height: 100vh;
+		height: fit-content;
 		h1 {
 			font-size: 1.3rem;
 		}
 		img {
 			width: 20%;
+		}
+		ul {
+			padding: 0;
 		}
 		.main-cart-items-container {
 			width: 50%;
@@ -188,11 +191,21 @@
 		}
 		.summary {
 			width: 45%;
-			max-height: fit-content;
+			min-height: fit-content;
 			margin-bottom: 1rem;
 			h1 {
 				padding-top: 0.5rem;
 			}
+		}
+		.cart-list-item {
+			font-size: small;
+		}
+		#no-vat-price {
+			font-size: small;
+		}
+
+		#cart-subtotal {
+			font-size: small;
 		}
 		.checkout-btn-container {
 			height: 10%;
