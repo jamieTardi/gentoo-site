@@ -42,6 +42,9 @@ const Footer = () => {
 				<Link to='terms-and-conditions'>
 					<p>Terms and Conditions</p>
 				</Link>
+				<a href='https://pdfhost.io/v/xMlfuJqL7_Privacy_policy_gentooairpdf.pdf'>
+					Privacy Policy
+				</a>
 			</div>
 			<div className='payment-icons'>
 				<img src={visa} alt='visa' />

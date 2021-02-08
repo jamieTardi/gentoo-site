@@ -57,6 +57,10 @@ const CartItems = ({
 							<br />
 							By making a purchase you are agreeing to our{' '}
 							<Link to='/terms-and-conditions'>terms and conditions.</Link>
+							<br />
+							<a href='https://pdfhost.io/v/xMlfuJqL7_Privacy_policy_gentooairpdf.pdf'>
+								Your privacy is import read our policy here
+							</a>
 						</p>
 					</div>
 					{productArr.map((product) => (
