@@ -72,7 +72,6 @@ const CartItems = ({
 										<span>£{vatPrice(product.price.raw)}</span>
 									</h6>
 								</div>
-								<button>Technical specs</button>
 
 								<div className='add-remove-items'>
 									<svg
