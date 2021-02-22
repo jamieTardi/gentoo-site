@@ -19,7 +19,7 @@ const BottomContainer = () => {
 				</div>
 				<div className='bottom-text'>
 					<h3>Why choose us?</h3>
-					<p>
+					<p className='bottom-text-p'>
 						Our products are helping shape the future of clean sustainble
 						living. Take a look around to see how we can shape the future of
 						your office space.

@@ -48,11 +48,12 @@ function App() {
 	const [order, setOrder] = useState({});
 	const [shippingCost, setShippingCost] = useState('');
 
+	//browser history
 	const history = createHistory();
-
 	history.listen((location, action) => {
 		window.scrollTo(0, 0);
 	});
+
 	//Get the initial shop products save them to state
 	const fetchProducts = async () => {
 		const { data } = await commerce.products.list();
