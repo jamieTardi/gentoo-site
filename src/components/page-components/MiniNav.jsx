@@ -155,7 +155,7 @@ const MiniNav = ({ setHideMiniNav, darkMode }) => {
 				</ul>
 				<div className='mini-nav-social'>
 					<a
-						href='https://www.facebook.com/Gentoo-Air-104268575010431'
+						href='https://www.facebook.com/Gentooair'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<svg

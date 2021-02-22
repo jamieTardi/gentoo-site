@@ -12,7 +12,7 @@ const Footer = () => {
 		<div className='footer-container'>
 			<div className='social-icons'>
 				<a
-					href='https://www.facebook.com/Gentoo-Air-104268575010431'
+					href='https://www.facebook.com/Gentooair'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<img src={facebook} alt='facebook' />
@@ -39,6 +39,7 @@ const Footer = () => {
 				<h6>All website content is copyright of Gentoo Ltd </h6>
 				<h6>130 Old street London</h6>
 				<h6>EC1V 9BD</h6>
+				<h6>Phone no: 01189 423 012</h6>
 				<Link to='terms-and-conditions'>
 					<p>Terms and Conditions</p>
 				</Link>

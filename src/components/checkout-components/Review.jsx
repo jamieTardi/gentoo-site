@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Typography, List, ListItem, ListItemText } from '@material-ui/core';
 
 const Review = ({
