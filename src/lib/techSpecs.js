@@ -66,6 +66,28 @@ export const techSpecs = {
 			bluetoothSpeaker: 'No',
 			plasmawave: 'Yes',
 		},
+		{
+			title: 'WINIX Zero Compact',
+			img:
+				'https://winixeurope.eu/wp-content/uploads/2020/12/Winix-Compact-Air-purifier-front.png',
+			modelNo: 'AAPU500-JLE',
+			maxRoomCapacity: '50 m2',
+			maxAirFlow: '250 m3/h',
+			powerConsumption: '12-55 Watt',
+			noiseLevel: '26,5 - 53,7 dB',
+			dimensions: '241 x 241 x 370 mm',
+			weight: '3,1 kg',
+			filterReplacement: 'Yes',
+			airQualityLight: 'Blue  / Amber / Red',
+			dustSensor: 'Yes',
+			odourSensor: 'No',
+			fanSpeeds: '4',
+			sleepMode: 'Yes',
+			autoMode: 'Yes',
+			timer: 'No',
+			bluetoothSpeaker: 'Yes',
+			plasmawave: 'Yes',
+		},
 	],
 	humidifiers: [
 		{

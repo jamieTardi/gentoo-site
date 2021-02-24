@@ -27,6 +27,7 @@ import {
 	WinixZero,
 	WinixZeroN,
 	WinixZeroPro,
+	WinixZeroCompact,
 	BonecoF100,
 	BonecoF120,
 	BonecoF220,
@@ -210,6 +211,9 @@ function App() {
 					<Terms />
 				</Route>
 				{/* subpages */}
+				<Route exact path='/winix-zero-compact'>
+					<WinixZeroCompact />
+				</Route>
 				<Route exact path='/winix-zero'>
 					<WinixZero />
 				</Route>
